@@ -1,8 +1,8 @@
-name: Build and deploy Vediskill
+name: Build and deploy Vedicskill
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]   # change branch name if your default branch is not "main"
 
 permissions:
   contents: read
@@ -13,30 +13,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Build website
-        run: yarn build
-
+          node-version: '18'
+      - run: npm ci
+      - run: npm run build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
 
   deploy:
-    needs: build
+    environment:
+      name: github-pages   # ✅ required for GitHub Pages deployment
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
