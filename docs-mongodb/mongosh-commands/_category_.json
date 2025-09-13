@@ -1,0 +1,8 @@
+{
+  "label": "MongoDB Fundamentals",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+  "description": "Learning the mongodb shell commands,  insertOne(), updateOne(), insertMany(), find(), createIndex(), plus Compass operations"
+  }
+}
