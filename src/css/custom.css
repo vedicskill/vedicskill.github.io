@@ -79,3 +79,12 @@
   background-color: var(--ifm-color-primary);
   color: var(--ifm-color-white);
 }
+
+/*
+html[data-theme='dark'] .hero__subtitle,
+html[data-theme='dark'] .hero__title,
+html[data-theme='dark'] .sectionTitle,
+html[data-theme='dark'] .sectionSubtitle {
+  color: #111 !important;
+}*/
+

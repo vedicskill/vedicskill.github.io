@@ -146,7 +146,7 @@ const config = {
         title: 'Vedicskill',
         logo: {
           alt: 'vedicskill logo',
-          src: 'img/logo2.png',
+          src: 'img/logo1.png',
         },
         items: [
           {
