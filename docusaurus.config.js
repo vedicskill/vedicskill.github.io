@@ -104,6 +104,15 @@ const config = {
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'microsoft-copilot-studio',
+        path: 'docs-copilot-studio',
+        routeBasePath: 'microsoft-copilot-studio',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
   ],
 
   themeConfig:
@@ -146,6 +155,7 @@ const config = {
             items: [
               { to: '/mongodb/intro', label: 'MongoDB' },
               { to: '/statistics/intro', label: 'Statistics' },
+              { to: '/microsoft-copilot-studio/intro', label: 'Microsoft Copilot Studio' },
             ],
           },
           { to: '/blog', label: 'Blog', position: 'left' },
@@ -180,7 +190,7 @@ const config = {
               },
               {
                 label: 'email',
-                href: 'mailto:info@vedicskill.com',
+                href: 'mailto:support@vedicskill.com',
               },
             ],
           },
