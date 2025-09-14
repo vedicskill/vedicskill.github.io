@@ -73,6 +73,7 @@
   margin-bottom: 1.5rem;
 }
 
+
 /* Primary button - green */
 .customButtonPrimary {
   background-color: #2e7d32; /* Dark green */
@@ -372,3 +373,12 @@
     margin-bottom: 0.5rem;
   }
 }
+
+.alwaysWhiteText {
+  color: #ffffff !important;
+}
+
+.alwaysDarkText {
+  color: #111 !important; /* Or #000 for pure black */
+}
+

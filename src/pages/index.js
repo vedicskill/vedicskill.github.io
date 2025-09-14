@@ -16,7 +16,7 @@ function HomepageHeader() {
       <div className="container">
         <Heading
           as="h1"
-          className={clsx("hero__title", styles.sectionTitle)}
+          className={clsx("hero__title", styles.sectionTitle, styles.alwaysWhiteText)}
           style={{
             fontSize: '4rem',
             marginBottom: '2rem'
@@ -25,7 +25,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p
-          className={clsx("hero__subtitle", styles.sectionSubtitle)}
+          className={clsx("hero__subtitle", styles.sectionSubtitle, styles.alwaysWhiteText)}
           style={{
             fontSize: '1.5rem',
             maxWidth: '800px'
@@ -123,7 +123,7 @@ export default function Home() {
           </div>
 
           <div className="row">
-            <div className="col col--4">
+            <div className="col col--4" >
               <FeatureCard
                 title="Hands-on Projects"
                 description="Build real-world applications and solve practical problems that mirror industry challenges."
