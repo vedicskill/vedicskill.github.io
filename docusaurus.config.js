@@ -11,7 +11,7 @@ const {themes: prismThemes} = require('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Vedicskill',
-  tagline: 'A Practical way of learning',
+  tagline: 'Vedicskill is practical way of learning skills',
   favicon: 'img/favicon_io/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -40,6 +40,20 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  scripts: [
+    {
+      src: "https://www.googletagmanager.com/gtag/js?id=G-CDYJXR6P96",
+      async: true,
+    },
+    {
+      content: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CDYJXR6P96');
+      `,
+    },
+  ],
 
   presets: [
     [
@@ -102,6 +116,28 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+      metadata: [
+        // Primary SEO tags
+        {name: 'description', content: 'Learn Data Science, Statistics, AI, Web Apps with Vedicskill'},
+        {name: 'keywords', content: 'Analysis, Statistics, Mathematics, Machine learning, Deep Learning, Generative AI, Hands-on courses, Python, Data Science Web Apps'},
+        {name: 'author', content: 'VedicSkill'},
+        {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
+
+        // Open Graph / Facebook
+        {property: 'og:type', content: 'website'},
+        {property: 'og:locale', content: 'en_US'},
+        {property: 'og:site_name', content: 'VedicSkill'},
+
+        //        // Twitter Cards
+        //        {name: 'twitter:card', content: 'summary_large_image'},
+        //        {name: 'twitter:site', content: '@vedicskill'}, // Replace with your actual Twitter handle
+        //        {name: 'twitter:creator', content: '@vedicskill'},
+
+        // Additional SEO
+//        {name: 'theme-color', content: '#FF6B35'},
+        {name: 'apple-mobile-web-app-capable', content: 'yes'},
+      ],
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
