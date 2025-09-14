@@ -13,6 +13,7 @@ const config = {
   title: 'Vedicskill',
   tagline: 'Vedicskill is practical way of learning skills',
   favicon: 'img/favicon_io/favicon.ico',
+  staticDirectories: ['static'],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -113,6 +114,16 @@ const config = {
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ]
   ],
 
   themeConfig:
