@@ -1,13 +1,25 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 
 export default function FAQs() {
   return (
-    <Layout title="FAQs" description="Frequently Asked Questions about Vedicskill">
+    <Layout title="FAQs" description="Frequently Asked Questions about Vedicskill"
+    keywords={['vedicskill', 'faqs', 'education', 'data science', 'gen ai']}
+    >
+    <Head>
+      <meta name="author" content="Vedicskill Edu Tech" />
+      <meta property="og:title" content="Vedicskill FAQs" />
+      <meta property="og:description" content="Get answers to frequently asked questions about Vedicskill Edu Tech" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://vedicskill.com/faqs/" />
+//      <meta property="og:image" content="https://vedicskill.com/img/faq-cover.jpg" />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Head>
       <main style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
         <h1>FAQs</h1>
         <p>
-          Welcome to the Vedicskill FAQs section. Here you’ll find answers to the most common questions about our platform, courses, and services.
+          Welcome to the Vedicskill FAQs section. Vedicskill is and EduTech Platform. Here you’ll find answers to the most common questions about our platform, courses, and services.
         </p>
 
         <ol>
