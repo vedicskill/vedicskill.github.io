@@ -40,27 +40,14 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  scripts: [
-    {
-      src: "https://www.googletagmanager.com/gtag/js?id=G-CDYJXR6P96",
-      async: true,
-    },
-    {
-      content: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-CDYJXR6P96');
-      `,
-    },
-  ],
 
+  // Presets: this is where classic preset + GA config goes
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
+        docs: false, // we define custom docs plugins separately below
         // Blog configuration
         blog: {
           showReadingTime: true,
@@ -88,11 +75,17 @@ const config = {
           ignorePatterns: ['/tags/**'], // Example: ignore tags pages
           lastmod: 'date', // 'date' = YYYY-MM-DD, 'datetime' = ISO 8601
         },
+        // ✅ Google Analytics config
+        gtag: {
+          trackingID: 'G-CDYJXR6P96',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
+
+  // Plugins: multiple docs plugins with IDs
   plugins: [
-    // Docs plugins
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -187,7 +180,7 @@ const config = {
               },
               {
                 label: 'email',
-                href: 'https://x.com/docusaurus',
+                href: 'mailto:info@vedicskill.com',
               },
             ],
           },
