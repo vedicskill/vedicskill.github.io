@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvedicskill=self.webpackChunkvedicskill||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"How to do IndexNow | Bing Search","permalink":"/blog/indexnow-blog-post","unlisted":false,"date":"2025-09-15T00:00:00.000Z"}]}')}}]);
