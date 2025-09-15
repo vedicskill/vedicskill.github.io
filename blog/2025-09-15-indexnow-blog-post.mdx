@@ -1,0 +1,83 @@
+---
+slug: index-now-blog-post
+title: IndexNow Blog Post
+authors: [slorber]
+tags: [Indexnow how to index]
+---
+
+
+✅ Step 1: Create a file urls.txt
+
+Put it in the same folder as the script. Example:
+```bash
+https://www.vedicskill.com
+https://www.vedicskill.com/about
+https://www.vedicskill.com/faqs
+```
+
+✅ Step 2: PowerShell Script submit-indexnow.ps1
+
+Save this as submit-indexnow.ps1:
+```powershell
+# ================================
+# IndexNow Auto Submit Script
+# Author: Sudhir (Vedicskill)
+# ================================
+
+# Your IndexNow details
+$hostName    = "www.vedicskill.com"
+$apiKey      = "ce5a6632f6864fd5aab5084752db6b3b"
+$keyLocation = "https://www.vedicskill.com/ce5a6632f6864fd5aab5084752db6b3b.txt"
+
+# File containing URLs (one per line)
+$urlFile = ".\urls.txt"
+
+if (-Not (Test-Path $urlFile)) {
+    Write-Host "❌ File urls.txt not found. Please create urls.txt with your URLs." -ForegroundColor Red
+    exit
+}
+
+# Read URLs from file
+$urlList = Get-Content $urlFile | Where-Object {$_ -ne ""}
+
+if ($urlList.Count -eq 0) {
+    Write-Host "❌ No URLs found in urls.txt" -ForegroundColor Red
+    exit
+}
+
+# Build request body
+$body = @{
+    host       = $hostName
+    key        = $apiKey
+    keyLocation= $keyLocation
+    urlList    = $urlList
+} | ConvertTo-Json -Depth 3
+
+$headers = @{ "Content-Type" = "application/json; charset=utf-8" }
+
+Write-Host "🚀 Submitting $($urlList.Count) URLs to IndexNow..." -ForegroundColor Cyan
+
+try {
+    $response = Invoke-WebRequest -Uri "https://api.indexnow.org/indexnow" -Method POST -Headers $headers -Body $body
+    Write-Host "✅ Status: $($response.StatusCode) $($response.StatusDescription)" -ForegroundColor Green
+} catch {
+    Write-Host "❌ Error submitting URLs: $($_.Exception.Message)" -ForegroundColor Red
+}
+```
+
+✅ Step 3: Run the Script
+
+In PowerShell:
+
+```bash
+cd "C:\path\to\script"
+.\submit-indexnow.ps1
+```
+
+🔄 Example Output
+
+```css
+🚀 Submitting 4 URLs to IndexNow...
+✅ Status: 200 OK
+```
+
