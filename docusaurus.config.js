@@ -170,7 +170,15 @@ const config = {
             ],
           },
           { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/about', label: 'About', position: 'left' },
+          {
+            label: 'About',
+            position: 'left',
+            items: [
+               {to: '/about', label: 'About'},
+               {to: '/faqs', label: 'FAQs'},
+             ]
+          },
+          //{ to: '/about', label: 'About', position: 'left' },
           {
             href: 'https://www.udemy.com/user/freeai-space/',
             label: 'Udemy Courses',
