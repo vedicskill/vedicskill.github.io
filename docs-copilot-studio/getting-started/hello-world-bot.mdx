@@ -54,7 +54,7 @@ Please download the FAQs document from by clicking on below button
   onMouseOver={e => e.target.style.backgroundColor = "#205d3b"}
   onMouseOut={e => e.target.style.backgroundColor = "#359962"}
   >
-    📥 Download FAQs docx
+    📥 Download FAQs PDF
   </button>
 </a>
 
@@ -100,4 +100,60 @@ Carefully review all automatically generated content and make any necessary modi
 
 ### Step 5: Create the Agent
 
-Once you have verified all the details, click the **Create** button to create a your first copilot agent.
+Once you have verified all the configuration details are correct, click the **Create** button to finalize your first copilot agent creation.
+
+- Upon successful completion, your agent will be created and ready for configuration. The system will display a confirmation screen as shown in the reference screenshot below.
+- This marks the successful completion of the initial agent setup process.
+
+![create copilot agent](/img/mcs/img4-min.png)
+
+### Step 6: Add Knowledge Sources
+
+Navigate to the **Overview** tab and scroll down to locate the Knowledge section, which serves as the foundation for your agent's intelligence.
+
+![create copilot agent](/img/mcs/img5-min.png)
+
+The Knowledge section allows you to integrate various data sources that will empower your agent with relevant information. Microsoft Copilot supports multiple knowledge source types to ensure comprehensive coverage:
+
+**Cloud-Based Sources:**
+- **Public Websites** - Crawl and index publicly accessible web content
+- **SharePoint** - Access organizational documents and collaboration spaces
+- **Azure AI Search** - Leverage advanced search capabilities with AI-powered indexing
+- **Salesforce** - Integrate CRM data and customer information
+- **Dynamics 365** - Connect business applications and operational data
+
+**Database Sources:**
+- **Azure SQL** - Connect to Microsoft's cloud database service
+- **Snowflake** - Access cloud data warehouse platforms
+- **Oracle** - Integrate with Oracle database systems
+- **Databricks** - Connect to unified analytics platforms
+- **Azure Databricks** - Leverage Microsoft's Apache Spark-based analytics service
+
+**Enterprise Knowledge Platforms:**
+- **Zendesk** - Access customer support and ticketing data
+- **Confluence** - Integrate team collaboration and documentation spaces
+
+![create copilot agent](/img/mcs/img6-min.png)
+
+**Best Practices for Knowledge Integration:**
+- Start with your most critical data sources first
+- Ensure proper permissions are configured for each knowledge source
+- Test connectivity before proceeding to the next step
+- Consider data refresh frequency based on your business needs
+
+We uploaded the Frequently asked question ([FAQs](#step-2-configure-basic-settings) given in Configure section above) PDF as a knowledge source.
+
+![publish the agent](/img/mcs/img7-min.png)
+
+### Step 7: Publish Agent
+
+After configuring your knowledge sources and verifying all settings, proceed to **Publish** your agent to make it available for use.
+
+**Pre-Publication Checklist:**
+- Review agent configuration settings
+- Verify knowledge source connections
+- Test basic functionality if available
+- **Confirm user access permissions**
+- Validate agent responses align with intended use cases
+
+Once published, your Microsoft Copilot agent will be available to users based on the permissions and deployment settings you've configured. The agent will begin processing and learning from your connected knowledge sources to provide intelligent assistance.
