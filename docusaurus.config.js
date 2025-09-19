@@ -10,7 +10,7 @@ const {themes: prismThemes} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Vedicskill',
+  title: 'Vedicskill Edutech',
   tagline: 'Vedicskill is practical way of learning skills',
   favicon: 'img/favicon_io/favicon.ico',
   staticDirectories: ['static'],

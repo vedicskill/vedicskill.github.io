@@ -1,0 +1,103 @@
+---
+sidebar_position: 3
+---
+
+# Your First Copilot: Hello World Bot
+
+Let's create your first copilot to get familiar with the basic workflow.
+
+### Step 1: Create a New Copilot
+
+1. **Click "Create"** from the main dashboard
+2. **Select "New copilot"** from the dropdown menu
+3. **Choose a template** or start with "Blank copilot"
+
+
+
+### Step 2: Configure Basic Settings
+
+Fill in the following information:
+
+Prompt: 
+```commandline
+You are "Vedicskill", the official representative of Vedicskill Edu Tech Company. 
+Your role is to answer customer questions accurately. Use only the sources of information given below:
+- company FAQs
+- official website content
+- authorized company materials. 
+Do not include external information. 
+```
+
+Refined prompt: (handling customers)
+```commandline
+Agent should provide the concise, friendly humorous resonse. 
+- Extract the information from the company frequently questions document and answer any questions. 
+- Use information extract from company website - www.vedicskill.com.	
+- If you don’t know or unsure of the answer don’t make up the answer,direct 
+  customer/user to support@vedicskill.com
+- Always cite source links when using website information
+```
+
+Upload  Frequently Asked Questions:
+Please download the FAQs document from by clicking on below button
+
+<a href="/files/vedicskill-frequently-asked-questions.pdf" download>
+  <button style={{
+    backgroundColor: "#33925d",
+    color: "white",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "8px",
+    cursor: "pointer",
+    transition: "background-color 0.3s ease"
+  }}
+  onMouseOver={e => e.target.style.backgroundColor = "#205d3b"}
+  onMouseOut={e => e.target.style.backgroundColor = "#359962"}
+  >
+    📥 Download FAQs docx
+  </button>
+</a>
+
+
+### Step 3: Define Your Copilot's Purpose
+
+In the setup wizard, specify:
+
+- **What should your copilot do?**: "Greet users and provide basic information"
+- **Topics to cover**: Add initial conversation topics
+- **Sample questions**: Examples users might ask
+Eg: Please download FAQs of Vedicskill Edutech and upload in the Knowledge source Resources.
+
+
+### Step 4: Verify and Edit Detail in **Configure**
+
+#### Configuring Your Agent
+
+Navigate to the **Configure** option located next to the "Describe" button to view and edit the details of your newly created agent. Reference the screenshot below for guidance.
+
+![Configure Copilot Agent](/img/mcs/img3-min.png)
+
+#### Auto-Generated Fields
+
+You'll notice that Copilot has automatically populated several fields during the agent creation process:
+
+- **Name** - Agent identifier
+- **Description** - Brief overview of the agent's purpose
+- **Instructions** - Operational guidelines for the agent
+- **Suggested prompts** - Pre-configured conversation starters
+
+#### Knowledge Base Configuration
+
+**Optional:** You can enhance your agent by adding knowledge sources:
+- Public websites and their URLs can be added immediately
+- Document uploads (PDF, DOCX formats) become available after the initial agent creation is complete
+
+#### Review and Validation
+
+Carefully review all automatically generated content and make any necessary modifications.
+
+> **Important:** All content is *AI-generated and may contain inaccuracies*. It's recommended to thoroughly verify and adjust the information as needed before finalizing your agent configuration.
+
+### Step 5: Create the Agent
+
+Once you have verified all the details, click the **Create** button to create a your first copilot agent.
