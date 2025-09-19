@@ -14,8 +14,6 @@ sidebar_position: 1
    - Use your Microsoft work or school account
    - Complete any multi-factor authentication if prompted
 
-![Placeholder for Screenshot: Copilot Studio Sign-in Page]
-
 ### Step 2: Verify Your Environment
 
 Once signed in, you should see:
@@ -25,4 +23,4 @@ Once signed in, you should see:
 - **Create new copilot** button prominently displayed
 - **Recent copilots** section (if you have any)
 
-![Placeholder for Screenshot: Copilot Studio Main Interface]
+![copilot studio](/img/mcs/img2-min.png)
