@@ -1,0 +1,50 @@
+---
+sidebar_position: 1
+---
+
+# Uncontrolled Rectifiers in MATLAB
+
+Welcome to the introduction of Simscape Electrical in MATLAB/Simulink. This document serves as the course material for understanding uncontrolled rectifiers, specifically focusing on **diode rectifiers**.
+
+## What is a Rectifier?
+
+Diodes are extensively used in rectifier circuits. A **rectifier** is an electronic circuit that converts an alternating current (AC) signal into a unidirectional (direct current) signal. Essentially, a rectifier functions as an AC-to-DC converter and can also be considered an absolute value converter.
+
+When an AC input voltage `Vs` is applied to a rectifier circuit, the output voltage `Vo` follows the waveform of the input voltage, but with a crucial difference: the negative portions of the input signal are converted to positive values. This relationship can be expressed mathematically as:
+
+**`Vo = |Vs|`**
+
+Where |Vs| represents the absolute value of the input voltage.
+
+## Classification of Rectifiers
+
+Rectifiers are classified based on the type of input supply into two main categories:
+
+### 1. Single-Phase Rectifiers
+These rectifiers operate with single-phase AC input and are further subdivided into:
+- **Half-wave rectifiers**: Convert only one half of the AC waveform
+- **Full-wave rectifiers**: Convert both halves of the AC waveform
+
+### 2. Three-Phase Rectifiers
+These rectifiers operate with three-phase AC input systems and are commonly used in industrial applications requiring higher power conversion.
+
+---
+
+
+*This content is designed to provide a foundational understanding of rectifier circuits using Simscape Electrical tools in MATLAB/Simulink environment.*
+
+<object data="/docs/assets/speed_control_induction_motor.pdf" type="application/pdf" width="100%" height="600px">
+  <p>PDF not supported. <a href="/docs/assets/speed_control_induction_motor.pdf.pdf">Download here</a>.</p>
+</object>
+
+
+## Important Notes
+
+- **Single-phase half-wave rectifiers** represent the simplest type of rectifier configuration. However, due to their poor efficiency and high ripple content, they are **not commonly used in industrial applications**.
+
+- For the purpose of this course and analysis, **diodes are considered to be ideal**. This assumption simplifies calculations by neglecting forward voltage drop and reverse leakage current.
+
+
+## Learning Focus
+
+In this section, we will concentrate on **uncontrolled rectifiers**, which use diodes as the primary switching elements. Unlike controlled rectifiers that use thyristors or other controllable switches, uncontrolled rectifiers provide a fixed output voltage relationship with the input voltage.

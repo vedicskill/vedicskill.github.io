@@ -115,6 +115,15 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'matlab-courses',
+        path: 'docs-matlab-course',
+        routeBasePath: 'matlab-courses',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
@@ -167,6 +176,7 @@ const config = {
               { to: '/mongodb/intro', label: 'MongoDB' },
               { to: '/statistics/intro', label: 'Statistics' },
               { to: '/microsoft-copilot-studio/intro', label: 'Microsoft Copilot Studio' },
+              { to: '/matlab-courses/intro', label: 'MATLAB/SIMULINK Courses' },
             ],
           },
           { to: '/blog', label: 'Blog', position: 'left' },

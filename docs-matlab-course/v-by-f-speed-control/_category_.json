@@ -1,0 +1,8 @@
+{
+  "label": "AC Drives - Induction Motor",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+  "description": "Learn Speed Control of Induction Motor"
+  }
+}

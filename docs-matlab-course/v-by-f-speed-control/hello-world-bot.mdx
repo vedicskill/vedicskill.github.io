@@ -1,0 +1,158 @@
+---
+sidebar_position: 3
+---
+
+# Your First Copilot: Hello World Bot
+
+Let's create your first copilot to get familiar with the basic workflow.
+
+### Step 1: Create a New Copilot
+
+1. **Click "Create"** from the main dashboard
+2. **Select "New copilot"** from the dropdown menu
+3. **Choose a template** or start with "Blank copilot"
+
+
+
+### Step 2: Configure Basic Settings
+
+Fill in the following information:
+
+**Prompt** :
+```commandLine
+Create the agent name "Vedicskill Helpdesk", which is a chatbot for Vedicskill EduTech Company.
+Your role is to answer customer questions. Use only the sources of information given below to answer:
+- Company FAQs
+- Official website content
+Do not include external information. 
+```
+
+**Addon prompt on handling customers** :
+```commandLine
+Agent should provide the concise and friendly resonse.
+- Use information in company Frequency asked questions (FAQs) to answer questions by user.
+- Also use content of company website as source of information.
+- Always cite answers with source links for reference.
+- If you don’t know or unsure of the answer don’t make up the answer, direct the customer/user to support@vedicskill.com
+```
+
+Upload  Frequently Asked Questions:
+Please download the FAQs document from by clicking on below button
+
+<a href="/files/vedicskill-frequently-asked-questions.pdf" download>
+  <button style={{
+    backgroundColor: "#33925d",
+    color: "white",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "8px",
+    cursor: "pointer",
+    transition: "background-color 0.3s ease"
+  }}
+  onMouseOver={e => e.target.style.backgroundColor = "#205d3b"}
+  onMouseOut={e => e.target.style.backgroundColor = "#359962"}
+  >
+    📥 Download FAQs PDF
+  </button>
+</a>
+
+**[Click Here](/img/mcs/icon.png)** to download agent icon image.
+
+### Step 3: Define Your Copilot's Purpose
+
+In the setup wizard, specify:
+
+- **What should your copilot do?**: "Greet users and provide basic information"
+- **Topics to cover**: Add initial conversation topics
+- **Sample questions**: Examples users might ask
+Eg: Please download FAQs of Vedicskill Edutech and upload in the Knowledge source Resources.
+
+
+### Step 4: Verify and Edit Detail in **Configure**
+
+#### Configuring Your Agent
+
+Navigate to the **Configure** option located next to the "Describe" button to view and edit the details of your newly created agent. Reference the screenshot below for guidance.
+
+![Configure Copilot Agent](/img/mcs/img3-min.png)
+
+#### Auto-Generated Fields
+
+You'll notice that Copilot has automatically populated several fields during the agent creation process:
+
+- **Name** - Agent identifier
+- **Description** - Brief overview of the agent's purpose
+- **Instructions** - Operational guidelines for the agent
+- **Suggested prompts** - Pre-configured conversation starters
+
+#### Knowledge Base Configuration
+
+**Optional:** You can enhance your agent by adding knowledge sources:
+- Public websites and their URLs can be added immediately
+- Document uploads (PDF, DOCX formats) become available after the initial agent creation is complete
+
+#### Review and Validation
+
+Carefully review all automatically generated content and make any necessary modifications.
+
+> **Important:** All content is *AI-generated and may contain inaccuracies*. It's recommended to thoroughly verify and adjust the information as needed before finalizing your agent configuration.
+
+### Step 5: Create the Agent
+
+Once you have verified all the configuration details are correct, click the **Create** button to finalize your first copilot agent creation.
+
+- Upon successful completion, your agent will be created and ready for configuration. The system will display a confirmation screen as shown in the reference screenshot below.
+- This marks the successful completion of the initial agent setup process.
+
+![create copilot agent](/img/mcs/img4-min.png)
+
+### Step 6: Add Knowledge Sources
+
+Navigate to the **Overview** tab and scroll down to locate the Knowledge section, which serves as the foundation for your agent's intelligence.
+
+![create copilot agent](/img/mcs/img5-min.png)
+
+The Knowledge section allows you to integrate various data sources that will empower your agent with relevant information. Microsoft Copilot supports multiple knowledge source types to ensure comprehensive coverage:
+
+**Cloud-Based Sources:**
+- **Public Websites** - Crawl and index publicly accessible web content
+- **SharePoint** - Access organizational documents and collaboration spaces
+- **Azure AI Search** - Leverage advanced search capabilities with AI-powered indexing
+- **Salesforce** - Integrate CRM data and customer information
+- **Dynamics 365** - Connect business applications and operational data
+
+**Database Sources:**
+- **Azure SQL** - Connect to Microsoft's cloud database service
+- **Snowflake** - Access cloud data warehouse platforms
+- **Oracle** - Integrate with Oracle database systems
+- **Databricks** - Connect to unified analytics platforms
+- **Azure Databricks** - Leverage Microsoft's Apache Spark-based analytics service
+
+**Enterprise Knowledge Platforms:**
+- **Zendesk** - Access customer support and ticketing data
+- **Confluence** - Integrate team collaboration and documentation spaces
+
+![create copilot agent](/img/mcs/img6-min.png)
+
+**Best Practices for Knowledge Integration:**
+- Start with your most critical data sources first
+- Ensure proper permissions are configured for each knowledge source
+- Test connectivity before proceeding to the next step
+- Consider data refresh frequency based on your business needs
+
+We uploaded the Frequently asked question ([FAQs](#step-2-configure-basic-settings) given in Configure section above) PDF as a knowledge source.
+
+![publish the agent](/img/mcs/img7-min.png)
+
+### Step 7: Publish Agent
+
+After configuring your knowledge sources and verifying all settings, proceed to **Publish** your agent to make it available for use.
+
+**Pre-Publication Checklist:**
+- Review agent configuration settings
+- Verify knowledge source connections
+- Test basic functionality if available
+- **Confirm user access permissions**
+- Validate agent responses align with intended use cases
+
+Once published, your Microsoft Copilot agent will be available to users based on the permissions and deployment settings you've configured. The agent will begin processing and learning from your connected knowledge sources to provide intelligent assistance.
