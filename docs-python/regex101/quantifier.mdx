@@ -1,0 +1,21 @@
+---
+sidebar_position: 5
+---
+
+# Quantifiers
+
+Quantifiers define how many times a character, metacharacter, or character set can be repeated.
+
+| Symbol | Name | Meaning |
+|--------|------|---------|
+| `?` | Question Mark | 0 or 1 repetition |
+| `*` | Asterisk | Zero or more times |
+| `+` | Plus sign | One or more times |
+| `{n,m}` | Curly braces | Between n and m times |
+
+Examples:
+
+- `/hello*/` matches "hell", "hello", "helloo", "hellooo", etc.
+- `/hello+/` matches "hello", "helloo", "hellooo", etc. (but not "hell")
+- `/hello?/` matches only "hell" or "hello"
+- `/hello{2,5}/` matches "helloo", "hellooo", "helloooo", "hellooooo"

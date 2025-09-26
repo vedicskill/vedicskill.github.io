@@ -1,0 +1,23 @@
+---
+sidebar_position: 3
+---
+
+# Meta Characters
+
+Meta characters give regular expressions their power, allowing for more sophisticated matching.
+
+### Special Characters
+
+| Character | Description | Example | Match |
+|-----------|-------------|---------|-------|
+| \| | Either or | `cat\|hello` | Matches "cat" or "hello" |
+| . | Any character (except newline) | `he..lo` | Matches characters between "e" and "l" |
+| { } | Exactly specified number of occurrences | `he.{2}o` | Matches "hello" where there are exactly 2 characters between "e" and "o" |
+| * | Zero or more occurrences | `he.*o` | Matches "hello", "hero", "helico", etc. |
+| + | One or more occurrences | `he.+o` | Same as above but requires at least one character |
+| ? | Zero or one occurrence | `he.?o` | Matches "heo" or "hero" |
+| ( ) | Capture and group patterns | | |
+| [ ] | A set of characters | `[a-z]` | Matches any lowercase letter |
+| ^ | Starts with | `^hello` | Matches strings starting with "hello" |
+| $ | Ends with | `world$` | Matches strings ending with "world" |
+| \ | Signals a special sequence | `\d` | Matches any digit |
