@@ -109,7 +109,12 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="Master real-world skills through project-based learning with VedicSkill"
     >
-    {/* Floating Chat Button */}
+
+      <HomepageHeader />
+
+
+
+{/* Floating Chat Button */}
       {!open && (
         <button
           onClick={() => setOpen(true)}
@@ -132,7 +137,8 @@ export default function Home() {
         </button>
       )}
 
-      {/* Floating Chat Window */}
+
+{/* Floating Chat Window */}
       {open && (
         <div
           style={{
@@ -178,8 +184,6 @@ export default function Home() {
           />
         </div>
       )}
-
-      <HomepageHeader />
 
       {/* Main Features Section */}
 
