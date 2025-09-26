@@ -117,6 +117,15 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'python-courses',
+        path: 'docs-python',
+        routeBasePath: 'python-courses',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'matlab-courses',
         path: 'docs-matlab-course',
         routeBasePath: 'matlab-courses',
@@ -173,6 +182,7 @@ const config = {
             label: 'Docs',
             position: 'left',
             items: [
+              { to: '/python-courses/intro', label: 'Python' },
               { to: '/mongodb/intro', label: 'MongoDB' },
               { to: '/statistics/intro', label: 'Statistics' },
               { to: '/microsoft-copilot-studio/intro', label: 'Microsoft Copilot Studio' },
