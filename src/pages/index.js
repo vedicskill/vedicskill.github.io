@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import { useState } from 'react';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -101,15 +102,84 @@ function TestimonialCard({ name, role, content, rating }) {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  const [open, setOpen] = useState(false);
 
   return (
     <Layout
       title={`${siteConfig.title}`}
       description="Master real-world skills through project-based learning with VedicSkill"
     >
+    {/* Floating Chat Button */}
+      {!open && (
+        <button
+          onClick={() => setOpen(true)}
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            padding: "14px 18px",
+            borderRadius: "50%",
+            background: "#0E2841",   // ✅ Updated color
+            color: "#fff",
+            border: "none",
+            cursor: "pointer",
+            fontSize: "20px",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+            zIndex: 1000,
+          }}
+        >
+          💬
+        </button>
+      )}
+
+      {/* Floating Chat Window */}
+      {open && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: "80px",
+            right: "20px",
+            width: "350px",
+            height: "500px",
+            background: "#fff",
+            border: "1px solid #ccc",
+            borderRadius: "12px",
+            overflow: "hidden",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+            zIndex: 1000,
+          }}
+        >
+          {/* Close button */}
+          <button
+            onClick={() => setOpen(false)}
+            style={{
+              position: "absolute",
+              top: "5px",
+              right: "10px",
+              background: "transparent",
+              border: "none",
+              fontSize: "18px",
+              cursor: "pointer",
+              color: "#0E2841",   // ✅ Updated color
+              zIndex: 1001,
+            }}
+          >
+            ✖
+          </button>
+
+          {/* Copilot iframe */}
+          <iframe
+            src="https://copilotstudio.microsoft.com/environments/6a9f1beb-3cb5-e242-8c09-536bfd8149de/bots/cr3ae_agent/webchat?__version__=2"
+            frameBorder="0"
+            style={{ width: "100%", height: "100%" }}
+          />
+        </div>
+      )}
+
       <HomepageHeader />
 
       {/* Main Features Section */}
+
       <section className="hero hero--secondary" style={{padding: '5rem 0'}}>
         <div className="container">
           <div className="text--center margin-bottom--xl">
