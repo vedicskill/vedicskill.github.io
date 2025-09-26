@@ -119,7 +119,7 @@ export default function Home() {
             right: "20px",
             padding: "14px 18px",
             borderRadius: "50%",
-            background: "#0E2841",   // ✅ Updated color
+            background: "#0E2841",
             color: "#fff",
             border: "none",
             cursor: "pointer",
@@ -160,7 +160,7 @@ export default function Home() {
               border: "none",
               fontSize: "18px",
               cursor: "pointer",
-              color: "#0E2841",   // ✅ Updated color
+              color: "#0E2841",
               zIndex: 1001,
             }}
           >
@@ -172,6 +172,9 @@ export default function Home() {
             src="https://copilotstudio.microsoft.com/environments/6a9f1beb-3cb5-e242-8c09-536bfd8149de/bots/cr3ae_agent/webchat?__version__=2"
             frameBorder="0"
             style={{ width: "100%", height: "100%" }}
+            title="Microsoft Copilot Studio Chat"
+            allow="microphone; camera"
+            loading="lazy"
           />
         </div>
       )}
