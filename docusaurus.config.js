@@ -52,8 +52,7 @@ const config = {
       ({
         docs: false, // we define custom docs plugins separately below
         // Blog configuration
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
+
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -69,6 +68,7 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -87,6 +87,16 @@ const config = {
         },
       }),
     ],
+  ],
+  // adding stylesheet
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   // Plugins: multiple docs plugins with IDs
@@ -134,6 +144,8 @@ const config = {
         path: 'docs-matlab-course',
         routeBasePath: 'matlab-courses',
         sidebarPath: require.resolve('./sidebars.js'),
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
       },
     ],
     [

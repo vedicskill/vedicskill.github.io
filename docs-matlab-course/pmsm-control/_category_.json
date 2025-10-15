@@ -1,5 +1,5 @@
 {
-  "label": "AC Drives - Permanent Magnet Synchronous Machine (PMSM)",
+  "label": "AC Drives - PMSM",
   "position": 3,
   "link": {
     "type": "generated-index",
