@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkvedicskill=globalThis.webpackChunkvedicskill||[]).push([[8121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"Indexnow how to index","permalink":"/blog/tags/indexnow-how-to-index","count":1}]}')}}]);

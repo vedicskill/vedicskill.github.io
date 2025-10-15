@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvedicskill=self.webpackChunkvedicskill||[]).push([[5470],{4336:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"matlab-courses"}')}}]);

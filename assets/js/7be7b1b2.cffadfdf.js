@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvedicskill=self.webpackChunkvedicskill||[]).push([[9099],{3661:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"python-courses"}')}}]);
