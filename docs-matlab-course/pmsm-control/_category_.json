@@ -1,0 +1,8 @@
+{
+  "label": "AC Drives - PMSM",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+  "description": "Mathematical Modeling of PMSM"
+  }
+}

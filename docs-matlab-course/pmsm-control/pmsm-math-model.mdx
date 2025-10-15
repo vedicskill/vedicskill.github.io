@@ -1,0 +1,151 @@
+---
+sidebar_position: 1
+title: Mathematical Model for PMSM
+description: Comprehensive guide to mathematical foundations, state-space models, and control strategies for permanent magnet synchronous motor speed control.
+keywords: [PMSM, mathematical model, speed control, transfer function, PI controller, fuzzy logic]
+---
+
+import 'katex/dist/katex.min.css';
+
+# Mathematical Model for PMSM
+
+This document provides a comprehensive synthesis of the mathematical foundations, state-space modeling, transfer functions, and control strategies for permanent magnet synchronous motor (PMSM) speed control.
+
+---
+
+## 1. Introduction to PMSM
+
+Permanent Magnet Synchronous Motors (PMSM) are electrical motors that use permanent magnets to produce the air gap magnetic field rather than electromagnets.
+
+### Key Advantages
+
+- **High Efficiency:** No copper losses in the rotor
+- **High Power Density:** Compact structure with high torque-to-weight ratio
+- **Fast Dynamic Response:** Superior transient performance
+- **Low Maintenance:** No brushes or slip rings
+- **Noiseless Operation:** Smooth torque with minimal noise
+- **Extended Speed Range:** Suitable for high-speed applications
+
+### Motor Structure
+
+- **Stator:** Three-phase windings carrying AC current
+- **Rotor:** Permanent magnets producing constant flux
+- **Power Electronics:** Inverter for frequency conversion and control
+
+---
+
+## 2. Coordinate Transformations
+
+Vector control requires transforming three-phase stationary quantities into a rotating two-phase d-q frame.
+
+### 2.1 Clarke Transformation
+
+Converts (a, b, c) → (α, β):
+
+$$
+\begin{bmatrix} i_{\alpha} \\ i_{\beta} \end{bmatrix} =
+\sqrt{\frac{2}{3}}
+\begin{bmatrix}
+1 & -\frac{1}{2} & -\frac{1}{2} \\
+0 & \frac{\sqrt{3}}{2} & -\frac{\sqrt{3}}{2}
+\end{bmatrix}
+\begin{bmatrix} i_a \\ i_b \\ i_c \end{bmatrix}
+$$
+
+- **$$i_α$$:** Real-axis component
+- **$$i_β$$:** Imaginary-axis component
+
+---
+
+### 2.2 Park Transformation
+
+Converts (α, β) → (d, q) rotating frame:
+
+$$
+\begin{bmatrix} i_d \\ i_q \end{bmatrix} =
+\begin{bmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{bmatrix}
+\begin{bmatrix} i_\alpha \\ i_\beta \end{bmatrix}
+$$
+
+- **θ:** Rotor position
+- **d-axis:** aligned with flux
+- **q-axis:** perpendicular
+
+---
+
+## 3. PMSM Mathematical Modeling
+
+### 3.1 State-Space Electrical Model
+
+Voltage equations:
+
+$$
+v_d = R_s i_d + \frac{d\lambda_d}{dt} - \omega_r \lambda_q
+$$
+
+$$
+v_q = R_s i_q + \frac{d\lambda_q}{dt} + \omega_r \lambda_d
+$$
+
+Flux linkages:
+
+$$
+\lambda_q = L_q i_q, \qquad \lambda_d = L_d i_d + \lambda_{af}
+$$
+
+Current dynamics:
+
+$$
+\frac{di_d}{dt} = \frac{v_d - R_s i_d + \omega_r L_q i_q}{L_d}
+$$
+
+$$
+\frac{di_q}{dt} = \frac{v_q - R_s i_q + \omega_r L_d i_d - \omega_r \lambda_{af}}{L_q}
+$$
+
+---
+
+### 3.2 Electromagnetic Torque
+
+$$
+T_e = \frac{3}{2}\frac{P}{2}(\lambda_d i_q - \lambda_q i_d)
+$$
+
+For surface-mounted PMSM ($L_d=L_q$):
+
+$$
+T_e = \frac{3}{2} P \lambda_{af} i_q
+$$
+
+---
+
+### 3.3 Mechanical Dynamics
+
+$$
+T_e = T_l + B\omega_r + J \frac{d\omega_r}{dt}
+$$
+
+---
+
+## 4. Example Motor Parameters
+
+| Parameter | Description |Value | Unit |
+|-----------|-------|------|------|
+| $$R_s$$       | Stator Resistance |0.2   | Ω    |
+| $$L_d$$         | Direct axis Inductance |8.5   | mH   |
+| $$L_q$$         | Quadrature axis Inductance |8.5   | mH   |
+| $$P$$         | Number of Poles |8     | -    |
+| $$λ_{af}$$      | Flux |0.175 | Wb   |
+| $$B$$         | Friction |0.005 | N·m·s |
+| $$J$$         | Intertia |0.089 | kg·m² |
+| Rated Speed | Rated Speed |1000 | RPM |
+
+
+---
+
+## 9. References
+
+- Krishnan, R. *Permanent Magnet Synchronous and Brushless DC Motor Drives* (2010)
+- Pillay, P. & Krishnan, R. *Modeling of Permanent Magnet Motor Drives* (1989)
+- Maamoun, A., et al. *Fuzzy Logic Based Speed Controller for PMSM Drive* (2013)
+- Wang, Z., et al. *SVPWM Techniques and Applications in HTS PMSM Machines Control* (2010)

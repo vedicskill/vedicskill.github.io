@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 const {themes: prismThemes} = require('prism-react-renderer');
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -50,6 +52,7 @@ const config = {
       ({
         docs: false, // we define custom docs plugins separately below
         // Blog configuration
+
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -65,6 +68,7 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,6 +87,16 @@ const config = {
         },
       }),
     ],
+  ],
+  // adding stylesheet
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   // Plugins: multiple docs plugins with IDs
@@ -130,6 +144,8 @@ const config = {
         path: 'docs-matlab-course',
         routeBasePath: 'matlab-courses',
         sidebarPath: require.resolve('./sidebars.js'),
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
       },
     ],
     [
