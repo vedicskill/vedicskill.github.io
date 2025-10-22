@@ -140,6 +140,15 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'facerec-django-courses',
+        path: 'docs-facerec-django',
+        routeBasePath: 'facerec-django-courses',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'matlab-courses',
         path: 'docs-matlab-course',
         routeBasePath: 'matlab-courses',
@@ -199,6 +208,7 @@ const config = {
             position: 'left',
             items: [
               { to: '/python-courses/intro', label: 'Python' },
+              { to: '/facerec-django-courses/intro', label: 'Facerec Django' },
               { to: '/mongodb/intro', label: 'MongoDB' },
               { to: '/statistics/intro', label: 'Statistics' },
               { to: '/microsoft-copilot-studio/intro', label: 'Microsoft Copilot Studio' },
