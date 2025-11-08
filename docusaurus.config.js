@@ -208,7 +208,7 @@ const config = {
             position: 'left',
             items: [
               { to: '/python-courses/intro', label: 'Python' },
-              { to: '/facerec-django-courses/intro', label: 'Facerec Django' },
+              { to: '/facerec-django-courses/intro', label: 'Face Recognition Web App in Django' },
               { to: '/mongodb/intro', label: 'MongoDB' },
               { to: '/statistics/intro', label: 'Statistics' },
               { to: '/microsoft-copilot-studio/intro', label: 'Microsoft Copilot Studio' },
