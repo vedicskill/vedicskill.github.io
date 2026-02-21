@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkvedicskill=globalThis.webpackChunkvedicskill||[]).push([[410],{92288(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"microsoft-copilot-studio"}')}}]);

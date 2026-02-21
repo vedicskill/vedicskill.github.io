@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkvedicskill=globalThis.webpackChunkvedicskill||[]).push([[5470],{74336(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"matlab-courses"}')}}]);

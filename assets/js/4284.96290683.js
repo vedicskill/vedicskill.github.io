@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkvedicskill=globalThis.webpackChunkvedicskill||[]).push([[4284],{31903(e,a,i){i.d(a,{createRadarServices:()=>l.f});var l=i(96645);i(808)}}]);

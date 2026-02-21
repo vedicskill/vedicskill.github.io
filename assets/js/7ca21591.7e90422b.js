@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkvedicskill=globalThis.webpackChunkvedicskill||[]).push([[5912],{8622:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"facerec-django-courses"}')}}]);
