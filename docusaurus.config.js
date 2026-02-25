@@ -4,50 +4,50 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-const {themes: prismThemes} = require('prism-react-renderer');
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+const { themes: prismThemes } = require("prism-react-renderer");
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Vedicskill Edutech',
-  tagline: 'Vedicskill is practical way of learning skills',
-  favicon: 'img/favicon_io/favicon.ico',
-  staticDirectories: ['static'],
+  title: "Vedicskill Edutech",
+  tagline: "Vedicskill is practical way of learning skills",
+  favicon: "img/favicon_io/favicon.ico",
+  staticDirectories: ["static"],
 
-//   Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  //   Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
-  url: 'https://vedicskill.com',
+  url: "https://vedicskill.com",
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',
+  baseUrl: "/",
   trailingSlash: false, // Global trailingSlash config
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'vedicskill', // Usually your GitHub org/user name.
-  projectName: 'vedicskill.github.io', // Usually your repo name.
+  organizationName: "vedicskill", // Usually your GitHub org/user name.
+  projectName: "vedicskill.github.io", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   // Presets: this is where classic preset + GA config goes
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: false, // we define custom docs plugins separately below
@@ -56,33 +56,33 @@ const config = {
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
 
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
         // Sitemap configuration as per official docs
         sitemap: {
-          changefreq: 'weekly',
+          changefreq: "weekly",
           priority: 0.5,
-          filename: 'sitemap.xml',
-          ignorePatterns: ['/tags/**'], // Example: ignore tags pages
-          lastmod: 'date', // 'date' = YYYY-MM-DD, 'datetime' = ISO 8601
+          filename: "sitemap.xml",
+          ignorePatterns: ["/tags/**"], // Example: ignore tags pages
+          lastmod: "date", // 'date' = YYYY-MM-DD, 'datetime' = ISO 8601
         },
         // ✅ Google Analytics config
         gtag: {
-          trackingID: 'G-CDYJXR6P96',
+          trackingID: "G-CDYJXR6P96",
           anonymizeIP: true,
         },
       }),
@@ -91,74 +91,74 @@ const config = {
   // adding stylesheet
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
 
   // Plugins: multiple docs plugins with IDs
   plugins: [
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'mongodb',
-        path: 'docs-mongodb',
-        routeBasePath: 'mongodb',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "mongodb",
+        path: "docs-mongodb",
+        routeBasePath: "mongodb",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'statistics',
-        path: 'docs-statistics',
-        routeBasePath: 'statistics',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "statistics",
+        path: "docs-statistics",
+        routeBasePath: "statistics",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'microsoft-copilot-studio',
-        path: 'docs-copilot-studio',
-        routeBasePath: 'microsoft-copilot-studio',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "microsoft-copilot-studio",
+        path: "docs-copilot-studio",
+        routeBasePath: "microsoft-copilot-studio",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'python-courses',
-        path: 'docs-python',
-        routeBasePath: 'python-courses',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "python-courses",
+        path: "docs-python",
+        routeBasePath: "python-courses",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'facerec-django-courses',
-        path: 'docs-facerec-django',
-        routeBasePath: 'facerec-django-courses',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "facerec-django-courses",
+        path: "docs-facerec-django",
+        routeBasePath: "facerec-django-courses",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'matlab-courses',
-        path: 'docs-matlab-course',
-        routeBasePath: 'matlab-courses',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "matlab-courses",
+        path: "docs-matlab-course",
+        routeBasePath: "matlab-courses",
+        sidebarPath: require.resolve("./sidebars.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
     ],
     [
-      '@docusaurus/plugin-ideal-image',
+      "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
         max: 1030, // max resized image's size.
@@ -166,24 +166,31 @@ const config = {
         steps: 2, // the max number of images generated between min and max (inclusive)
         disableInDev: false,
       },
-    ]
+    ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-
       metadata: [
         // Primary SEO tags
-        {name: 'description', content: 'Learn Data Science, Statistics, AI, Web Apps with Vedicskill'},
-        {name: 'keywords', content: 'Analysis, Statistics, Mathematics, Machine learning, Deep Learning, Generative AI, Hands-on courses, Python, Data Science Web Apps'},
-        {name: 'author', content: 'VedicSkill'},
-        {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
+        {
+          name: "description",
+          content:
+            "Learn Data Science, Statistics, AI, Web Apps with Vedicskill",
+        },
+        {
+          name: "keywords",
+          content:
+            "Analysis, Statistics, Mathematics, Machine learning, Deep Learning, Generative AI, Hands-on courses, Python, Data Science Web Apps",
+        },
+        { name: "author", content: "VedicSkill" },
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
 
         // Open Graph / Facebook
-        {property: 'og:type', content: 'website'},
-        {property: 'og:locale', content: 'en_US'},
-        {property: 'og:site_name', content: 'VedicSkill'},
+        { property: "og:type", content: "website" },
+        { property: "og:locale", content: "en_US" },
+        { property: "og:site_name", content: "VedicSkill" },
 
         //        // Twitter Cards
         //        {name: 'twitter:card', content: 'summary_large_image'},
@@ -191,84 +198,90 @@ const config = {
         //        {name: 'twitter:creator', content: '@vedicskill'},
 
         // Additional SEO
-//        {name: 'theme-color', content: '#FF6B35'},
-        {name: 'apple-mobile-web-app-capable', content: 'yes'},
+        //        {name: 'theme-color', content: '#FF6B35'},
+        { name: "apple-mobile-web-app-capable", content: "yes" },
       ],
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: 'Vedicskill',
+        title: "Vedicskill",
         logo: {
-          alt: 'vedicskill logo',
-          src: 'img/logo1.png',
+          alt: "vedicskill logo",
+          src: "img/icon.png",
         },
         items: [
           {
-            label: 'Docs',
-            position: 'left',
+            label: "Docs",
+            position: "left",
             items: [
-              { to: '/python-courses/intro', label: 'Python' },
-              { to: '/facerec-django-courses/intro', label: 'Face Recognition Web App in Django' },
-              { to: '/mongodb/intro', label: 'MongoDB' },
-              { to: '/statistics/intro', label: 'Statistics' },
-              { to: '/microsoft-copilot-studio/intro', label: 'Microsoft Copilot Studio' },
-              { to: '/matlab-courses/intro', label: 'MATLAB/SIMULINK Courses' },
+              { to: "/python-courses/intro", label: "Python" },
+              {
+                to: "/facerec-django-courses/intro",
+                label: "Face Recognition Web App in Django",
+              },
+              { to: "/mongodb/intro", label: "MongoDB" },
+              { to: "/statistics/intro", label: "Statistics" },
+              {
+                to: "/microsoft-copilot-studio/intro",
+                label: "Microsoft Copilot Studio",
+              },
+              { to: "/matlab-courses/intro", label: "MATLAB/SIMULINK Courses" },
             ],
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            label: 'About',
-            position: 'left',
+            label: "About",
+            position: "left",
             items: [
-               {to: '/about', label: 'About'},
-               {to: '/faqs', label: 'FAQs'},
-             ]
+              { to: "/about", label: "About" },
+              { to: "/faqs", label: "FAQs" },
+            ],
           },
           //{ to: '/about', label: 'About', position: 'left' },
           {
-            href: 'https://www.udemy.com/user/freeai-space/',
-            label: 'Udemy Courses',
-            position: 'right',
+            href: "https://www.udemy.com/user/freeai-space/",
+            label: "Udemy Courses",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
-              { label: 'MongoDB', to: '/mongodb/intro' },
-              { label: 'Statistics', to: '/statistics/intro' },
+              { label: "MongoDB", to: "/mongodb/intro" },
+              { label: "Statistics", to: "/statistics/intro" },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/@datascienceanywhere',
+                label: "YouTube",
+                href: "https://www.youtube.com/@datascienceanywhere",
               },
               {
-                label: 'Udemy',
-                href: 'https://www.udemy.com/user/freeai-space/',
+                label: "Udemy",
+                href: "https://www.udemy.com/user/freeai-space/",
               },
               {
-                label: 'email',
-                href: 'mailto:support@vedicskill.com',
+                label: "email",
+                href: "mailto:support@vedicskill.com",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/vedicskill',
+                label: "GitHub",
+                href: "https://github.com/vedicskill",
               },
             ],
           },
@@ -283,7 +296,7 @@ const config = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
 };
 
 module.exports = config;

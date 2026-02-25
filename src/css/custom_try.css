@@ -5,38 +5,47 @@
  */
 
 /* You can override the default Infima variables here. */
+/* Light Mode */
 :root {
-    --ifm-color-primary: #1462ff;
+    --ifm-color-primary: #0049da;
     --ifm-color-primary-dark: #002776;
-    --ifm-color-primary-darker: #00133b;
-    --ifm-color-primary-darkest: #00133b;
-    --ifm-color-primary-light: #1462ff;
+    --ifm-color-primary-darker: #001f5e;
+    --ifm-color-primary-darkest: #001136;
+
+    --ifm-color-primary-light: #0049da;
     --ifm-color-primary-lighter: #1462ff;
-    --ifm-color-primary-lightest: #1462ff;
-    --ifm-code-font-size: 95%;
+    --ifm-color-primary-lightest: #6296ff;
+
+    --ifm-code-font-size: 100%;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
     /* Custom text colors for light mode */
-    --ifm-color-text: #1c1e21;
-    --ifm-color-text-secondary: #525860;
+    --ifm-color-text: #002776;
+    --ifm-color-text-secondary: #0049da;
     --ifm-color-white: #ffffff;
+
+    /*Background colour*/
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
     --ifm-color-primary: #92d400;
-    --ifm-color-primary-dark: #6b9f00;
-    --ifm-color-primary-darker: #496a00;
-    --ifm-color-primary-darkest: #496a00;
-    --ifm-color-primary-light: #92d400;
-    --ifm-color-primary-lighter: #92d400;
-    --ifm-color-primary-lightest: #92d400;
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --ifm-color-primary-dark: #7fbb00;
+    --ifm-color-primary-darker: #6fa600;
+    --ifm-color-primary-darkest: #5a8800;
+
+    --ifm-color-primary-light: #6296ff;
+    --ifm-color-primary-lighter: #1462ff;
+    --ifm-color-primary-lightest: #0049da;
+
+    --docusaurus-highlighted-code-line-bg: rgba(0, 39, 118, 1);
 
     /* Custom text colors for dark mode */
-    --ifm-color-text: #e3e3e3;
+    --ifm-color-text: #0049da;
     --ifm-color-text-secondary: #b0b3b8;
-    --ifm-color-white: #ffffff;
+    --ifm-color-white: #e3e3e3;
+    /*Background colourr*/
+    --ifm-background-color: #001136;
 }
 
 /* Additional dark mode specific fixes */
