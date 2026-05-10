@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvedicskill=self.webpackChunkvedicskill||[]).push([["1399"],{6282(e,s,c){c.d(s,{createTreemapServices:()=>i.d});var i=c(6609);c(3345)}}]);
