@@ -108,7 +108,7 @@ export default function Home() {
                   color: "var(--ifm-color-emphasis-900)",
                 }}
               >
-                VedicSkill Academy | Tutorials
+                VedicSkill Academy
               </h1>
 
               <p
@@ -121,6 +121,31 @@ export default function Home() {
               >
                 Learn premium AI, machine learning, data science, computer vision, and analytics skills with structured tutorials, real-world projects, and deployment-ready training.
               </p>
+
+              <div
+                style={{
+                  width: "100%",
+                  maxWidth: "720px",
+                  margin: "0 auto 32px",
+                }}
+              >
+                <input
+                  type="text"
+                  placeholder="Search courses..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  style={{
+                    width: "100%",
+                    padding: "18px 24px",
+                    borderRadius: "14px",
+                    border: "1px solid var(--ifm-color-emphasis-200)",
+                    fontSize: "1rem",
+                    outline: "none",
+                    backgroundColor: "var(--ifm-background-color)",
+                    color: "var(--ifm-color-emphasis-900)",
+                  }}
+                />
+              </div>
 
               <div
                 style={{
