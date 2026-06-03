@@ -101,15 +101,7 @@ const config = {
         id: "visual-ai",
         path: "docs-visual-ai",
         routeBasePath: "course-visual-ai-with-transformers-llms",
-        sidebarPath: require.resolve("./sidebars.js"),
-        
-        customFields: {
-        title: "MongoDB",
-        description:
-          "Learn MongoDB from beginner to advanced with projects.",
-        icon: "🍃",
-        category: "Database"
-       }
+        sidebarPath: require.resolve("./sidebars.js")
       },
     ],
     [
@@ -229,18 +221,18 @@ const config = {
                 to: "/course-visual-ai-with-transformers-llms",
                 label: "Visual AI: Transformers & LLMs",
               },
-              { to: "/python-courses/intro", label: "Python" },
+              { to: "/python-courses", label: "Python" },
               {
-                to: "/facerec-django-courses/intro",
+                to: "/facerec-django-courses",
                 label: "Face Recognition Web App in Django",
               },
-              { to: "/mongodb/intro", label: "MongoDB" },
-              { to: "/statistics/intro", label: "Statistics" },
+              { to: "/mongodb", label: "MongoDB" },
+              { to: "/statistics", label: "Statistics" },
               {
-                to: "/microsoft-copilot-studio/intro",
+                to: "/microsoft-copilot-studio",
                 label: "Microsoft Copilot Studio",
               },
-              { to: "/matlab-courses/intro", label: "MATLAB/SIMULINK Courses" },
+              { to: "/matlab-courses", label: "MATLAB/SIMULINK Courses" },
             ],
           },
           { to: "/blog", label: "Blog", position: "left" },
@@ -266,8 +258,8 @@ const config = {
           {
             title: "Docs",
             items: [
-              { label: "MongoDB", to: "/mongodb/intro" },
-              { label: "Statistics", to: "/statistics/intro" },
+              { label: "MongoDB", to: "/mongodb" },
+              { label: "Statistics", to: "/statistics" },
             ],
           },
           {

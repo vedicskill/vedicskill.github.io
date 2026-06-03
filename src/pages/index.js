@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import styles from "./index.module.css";
 
 const config = require("../../docusaurus.config");
 
@@ -37,66 +38,15 @@ const courses = config.plugins
 
 function CourseCard({ course }) {
   return (
-    <Link
-      to={course.route}
-      style={{
-        textDecoration: "none",
-        color: "inherit",
-      }}
-    >
-      <div
-        style={{
-          height: "100%",
-          border: "1px solid #E5E7EB",
-          borderRadius: "18px",
-          padding: "24px",
-          background: "#FFFFFF",
-          transition: "all 0.2s ease",
-          cursor: "pointer",
-          boxShadow: "0 1px 2px rgba(0,0,0,0.04)",
-        }}
-      >
-        <div
-          style={{
-            fontSize: "2rem",
-            marginBottom: "16px",
-          }}
-        >
-          {course.icon}
-        </div>
+    <Link to={course.route} className={styles.courseCardLink}>
+      <div className={styles.courseCard}>
+        <div className={styles.courseCardIcon}>{course.icon}</div>
 
-        <h3
-          style={{
-            marginBottom: "12px",
-            fontWeight: 600,
-          }}
-        >
-          {course.title}
-        </h3>
+        <h3 className={styles.courseCardTitle}>{course.title}</h3>
 
-        <p
-          style={{
-            color: "#6B7280",
-            minHeight: "60px",
-            marginBottom: "20px",
-          }}
-        >
-          {course.description}
-        </p>
+        <p className={styles.courseCardDescription}>{course.description}</p>
 
-        <span
-          style={{
-            display: "inline-block",
-            padding: "6px 12px",
-            borderRadius: "999px",
-            background: "#ECFDF5",
-            color: "#065F46",
-            fontSize: "0.8rem",
-            fontWeight: 600,
-          }}
-        >
-          {course.category}
-        </span>
+        <span className={styles.courseCardCategory}>{course.category}</span>
       </div>
     </Link>
   );
@@ -128,8 +78,8 @@ export default function Home() {
           style={{
             paddingTop: "80px",
             paddingBottom: "60px",
-            background: "#FFFFFF",
-            borderBottom: "1px solid #F3F4F6",
+            background: "var(--ifm-background-color)",
+            borderBottom: "1px solid var(--ifm-color-emphasis-200)",
           }}
         >
           <div className="container">
@@ -146,6 +96,7 @@ export default function Home() {
                   fontSize: "4rem",
                   fontWeight: 700,
                   marginBottom: "20px",
+                  color: "var(--ifm-color-emphasis-900)",
                 }}
               >
                 VedicSkill Academy
@@ -154,7 +105,7 @@ export default function Home() {
               <p
                 style={{
                   fontSize: "1.3rem",
-                  color: "#6B7280",
+                  color: "var(--ifm-color-emphasis-600)",
                   marginBottom: "40px",
                 }}
               >
@@ -173,9 +124,11 @@ export default function Home() {
                   maxWidth: "700px",
                   padding: "18px 24px",
                   borderRadius: "14px",
-                  border: "1px solid #D1D5DB",
+                  border: "1px solid var(--ifm-color-emphasis-200)",
                   fontSize: "1rem",
                   outline: "none",
+                  backgroundColor: "var(--ifm-background-color)",
+                  color: "var(--ifm-color-emphasis-900)",
                 }}
               />
             </div>
@@ -189,6 +142,7 @@ export default function Home() {
           style={{
             paddingTop: "60px",
             paddingBottom: "80px",
+            background: "var(--ifm-background-color)",
           }}
         >
           <div className="container">
@@ -204,6 +158,7 @@ export default function Home() {
               <h2
                 style={{
                   margin: 0,
+                  color: "var(--ifm-color-emphasis-900)",
                 }}
               >
                 Courses
@@ -211,7 +166,7 @@ export default function Home() {
 
               <span
                 style={{
-                  color: "#6B7280",
+                  color: "var(--ifm-color-emphasis-600)",
                 }}
               >
                 {filteredCourses.length} Available
