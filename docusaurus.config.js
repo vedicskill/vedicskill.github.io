@@ -14,7 +14,7 @@ const rehypeKatex = require("rehype-katex").default;
 const config = {
   title: "VedicSkill Academy",
   tagline: "Your Learning Compasss",
-  favicon: "img/favicon_io/favicon.ico",
+  favicon: "img/favicon.ico",
   staticDirectories: ["static"],
 
   // Set the production url of your site here
