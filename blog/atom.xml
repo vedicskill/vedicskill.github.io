@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://vedicskill.com/blog</id>
-    <title>Vedicskill Edutech Blog</title>
+    <id>https://courses.vedicskill.com/blog</id>
+    <title>VedicSkill Academy Blog</title>
     <updated>2025-09-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://vedicskill.com/blog"/>
-    <subtitle>Vedicskill Edutech Blog</subtitle>
-    <icon>https://vedicskill.com/img/favicon_io/favicon.ico</icon>
+    <link rel="alternate" href="https://courses.vedicskill.com/blog"/>
+    <subtitle>VedicSkill Academy Blog</subtitle>
+    <icon>https://courses.vedicskill.com/img/favicon_io/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[How to do IndexNow | Bing Search]]></title>
-        <id>https://vedicskill.com/blog/indexnow-blog-post</id>
-        <link href="https://vedicskill.com/blog/indexnow-blog-post"/>
+        <id>https://courses.vedicskill.com/blog/indexnow-blog-post</id>
+        <link href="https://courses.vedicskill.com/blog/indexnow-blog-post"/>
         <updated>2025-09-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[✅ Step 1: Create a file urls.txt]]></summary>
         <content type="html"><![CDATA[<p>✅ Step 1: Create a file urls.txt</p>

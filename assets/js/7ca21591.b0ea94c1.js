@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvedicskill=self.webpackChunkvedicskill||[]).push([["4577"],{8622(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"facerec-django-courses"}')}}]);

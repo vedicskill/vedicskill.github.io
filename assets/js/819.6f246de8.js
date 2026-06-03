@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvedicskill=self.webpackChunkvedicskill||[]).push([["819"],{5390(e,c,s){s.d(c,{createArchitectureServices:()=>i.S});var i=s(5530);s(3345)}}]);

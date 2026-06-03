@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkvedicskill=globalThis.webpackChunkvedicskill||[]).push([[4737],{4737(e,i,l){l.d(i,{createPieServices:()=>s.f});var s=l(532);l(9302)}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvedicskill=self.webpackChunkvedicskill||[]).push([["5528"],{1947(e,s,c){c.d(s,{createWardleyServices:()=>l.J});var l=c(2295);c(3345)}}]);
