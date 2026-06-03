@@ -76,7 +76,7 @@ const config = {
         },
         // ✅ Google Analytics config
         gtag: {
-          trackingID: "G-CDYJXR6P96",
+          trackingID: "G-JH0MKP4S2N",
           anonymizeIP: true,
         },
       }),
