@@ -1,47 +1,46 @@
 ---
+title: "Statistics for Data Science & AI"
+description: "Learn statistics fundamentals for machine learning, analytics, and data-driven decision making."
+keywords: ["statistics", "data science statistics", "machine learning statistics", "analytics", "probability"]
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Statistics for Data Science & AI
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Master the statistical foundations needed for data science, machine learning, analytics, and AI engineering.
 
-## Getting Started
+## Why Statistics Matters
 
-Get started by **creating a new site**.
+Statistics is the language of data. It helps you understand patterns, measure uncertainty, make predictions, and turn raw information into business insights.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## What You Will Learn
 
-### What you'll need
+- Probability theory and distribution analysis
+- Descriptive statistics and exploratory data analysis
+- Hypothesis testing and confidence intervals
+- Regression modeling for prediction
+- Statistical techniques used in machine learning
+- Data visualization and interpretation for analytics
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Who Should Learn This
 
-## Generate a new site
+This tutorial is ideal for:
 
-Generate a new Docusaurus site using the **classic template**.
+- Aspiring data scientists and analysts
+- AI engineers building predictive models
+- Developers working with analytics pipelines
+- Professionals in business intelligence and decision science
 
-The classic template will automatically be added to your project after you run the command:
+## Course Structure
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+1. **Foundations:** Probability, random variables, and statistical distributions
+2. **Exploratory Analysis:** Summaries, visualization, and data interpretation
+3. **Inference:** Hypothesis testing, confidence intervals, and significance
+4. **Regression:** Linear models, performance metrics, and predictive analytics
+5. **Statistics for AI:** Applying statistical thinking to machine learning workflows
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Get Started
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Use these statistics concepts to strengthen your AI, machine learning, and data science projects. Follow the lessons, run the examples, and build confidence with practical applications.
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Ready to deepen your statistical skills and improve your analytics outcomes? Continue through the course modules and apply each concept to real-world examples.

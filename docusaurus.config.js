@@ -13,8 +13,8 @@ const rehypeKatex = require("rehype-katex").default;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "VedicSkill Academy",
-  tagline: "Your Learning Compasss",
-  favicon: "img/favicon_io/favicon.ico",
+  tagline: "Premium AI, Data Science & Software Development Training",
+  favicon: "img/favicon.ico",
   staticDirectories: ["static"],
 
   // Set the production url of your site here
@@ -180,20 +180,20 @@ const config = {
         {
           name: "description",
           content:
-            "Learn Data Science, Statistics, AI, Web Apps with VedicSkill Academy",
+            "VedicSkill Academy | Tutorials delivers premium AI, data science, computer vision, Python programming, MongoDB, and cloud deployment training for learners, professionals, and developers.",
         },
         {
           name: "keywords",
           content:
-            "Analysis, Statistics, Mathematics, Machine learning, Deep Learning, Generative AI, Hands-on courses, Python, Data Science Web Apps",
+            "AI training, data science courses, machine learning tutorials, generative AI, deep learning, computer vision, Python programming, MongoDB, LangChain, LLMs, MLOps, cloud deployment, analytics",
         },
-        { name: "author", content: "VedicSkill" },
+        { name: "author", content: "VedicSkill Academy" },
         { name: "viewport", content: "width=device-width, initial-scale=1.0" },
 
         // Open Graph / Facebook
         { property: "og:type", content: "website" },
         { property: "og:locale", content: "en_US" },
-        { property: "og:site_name", content: "VedicSkill" },
+        { property: "og:site_name", content: "VedicSkill Academy" },
 
         //        // Twitter Cards
         //        {name: 'twitter:card', content: 'summary_large_image'},
@@ -293,7 +293,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} VedicSkill Academy | Datascience Anywhere.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VedicSkill Academy | Tutorials. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,

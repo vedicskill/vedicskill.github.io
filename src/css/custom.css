@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -14,6 +16,41 @@
   --ifm-color-primary-darker: #0c7757;
   --ifm-color-primary-light: #4fd4b0;
   --ifm-color-primary-lighter: #8fe7ce;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  font-family: inherit;
+}
+
+.navbar,
+.footer {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.navbar a,
+.footer a {
+  color: inherit;
+}
+
+[data-theme='dark'] .navbar,
+[data-theme='dark'] .footer {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .navbar a,
+[data-theme='dark'] .footer a {
+  color: inherit;
 }
 
 /* Keep the current green palette in dark mode. */

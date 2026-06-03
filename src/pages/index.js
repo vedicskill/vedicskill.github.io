@@ -83,7 +83,6 @@ export default function Home() {
           }}
         >
           <div className="container">
-
             <div
               style={{
                 maxWidth: "900px",
@@ -91,11 +90,21 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
+              <p
+                style={{
+                  marginBottom: "16px",
+                  fontSize: "1rem",
+                  fontWeight: 600,
+                  color: "var(--ifm-color-primary)",
+                }}
+              >
+                AI training · Data science tutorials · Python programming · MongoDB · Generative AI · Cloud deployment
+              </p>
               <h1
                 style={{
                   fontSize: "4rem",
                   fontWeight: 700,
-                  marginBottom: "20px",
+                  marginBottom: "24px",
                   color: "var(--ifm-color-emphasis-900)",
                 }}
               >
@@ -104,35 +113,65 @@ export default function Home() {
 
               <p
                 style={{
-                  fontSize: "1.3rem",
+                  fontSize: "1.35rem",
+                  lineHeight: 1.8,
                   color: "var(--ifm-color-emphasis-600)",
-                  marginBottom: "40px",
+                  marginBottom: "32px",
                 }}
               >
-                Learn AI, Data Science, Statistics, Python,
-                Computer Vision and Engineering through
-                project-based documentation.
+                Learn premium AI, machine learning, data science, computer vision, and analytics skills with structured tutorials, real-world projects, and deployment-ready training.
               </p>
 
-              <input
-                type="text"
-                placeholder="Search courses..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
+              <div
                 style={{
                   width: "100%",
-                  maxWidth: "700px",
-                  padding: "18px 24px",
-                  borderRadius: "14px",
-                  border: "1px solid var(--ifm-color-emphasis-200)",
-                  fontSize: "1rem",
-                  outline: "none",
-                  backgroundColor: "var(--ifm-background-color)",
-                  color: "var(--ifm-color-emphasis-900)",
+                  maxWidth: "720px",
+                  margin: "0 auto 32px",
                 }}
-              />
-            </div>
+              >
+                <input
+                  type="text"
+                  placeholder="Search courses..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  style={{
+                    width: "100%",
+                    padding: "18px 24px",
+                    borderRadius: "14px",
+                    border: "1px solid var(--ifm-color-emphasis-200)",
+                    fontSize: "1rem",
+                    outline: "none",
+                    backgroundColor: "var(--ifm-background-color)",
+                    color: "var(--ifm-color-emphasis-900)",
+                  }}
+                />
+              </div>
 
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "16px",
+                  alignItems: "center",
+                }}
+              >
+                <a
+                  href="https://www.udemy.com/user/freeai-space/"
+                  className="button button--primary button--lg"
+                  style={{ minWidth: "240px" }}
+                >
+                  Start Learning on Udemy
+                </a>
+                <span
+                  style={{
+                    color: "var(--ifm-color-emphasis-600)",
+                    fontSize: "0.95rem",
+                  }}
+                >
+                  Explore career-focused AI, data science, and software development courses.
+                </span>
+              </div>
+            </div>
           </div>
         </section>
 
