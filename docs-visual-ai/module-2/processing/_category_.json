@@ -1,0 +1,8 @@
+{
+  "label": "Processing",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Image processing transforms raw images into formats suitable for machine learning models."
+  }
+}
