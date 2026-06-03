@@ -1,0 +1,8 @@
+{
+  "label": "Recognition",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Understanding the fundamentals of image classification with vision transformers"
+  }
+}

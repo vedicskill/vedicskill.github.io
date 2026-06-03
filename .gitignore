@@ -3,7 +3,8 @@
 
 # Production
 /build
-
+.github/agents/
+.github/instructions/
 # Generated files
 .docusaurus
 .cache-loader
