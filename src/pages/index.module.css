@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #86BC25; /* green */
+  background-color: #064E3B;
   overflow: hidden;
   min-height: 100vh;
 }
@@ -76,8 +76,8 @@
 
 /* Primary button - green */
 .customButtonPrimary {
-  background-color: #2e7d32; /* Dark green */
-  color: #fff;
+  background-color: #064E3B;
+  color: #ffffff;
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
@@ -86,15 +86,15 @@
 }
 
 .customButtonPrimary:hover {
-  background-color: #1b5e20; /* Darker green on hover */
-  color: #fff;
+  background-color: #053230;
+  color: #ffffff;
 }
 
 /* Secondary button - white */
 .customButtonSecondary {
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #2e7d32;
+  background-color: #ffffff;
+  color: #064E3B;
+  border: 2px solid #064E3B;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
@@ -103,14 +103,14 @@
 }
 
 .customButtonSecondary:hover {
-  background-color: #f0f0f0;
-  color: #000;
+  background-color: #f2f2f2;
+  color: #064E3B;
 }
 
 /* Enhanced Feature Cards */
 .featureCard {
-  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%);
+  border: 1px solid #e0e0e0;
   border-radius: 16px;
   padding: 2rem;
   transition: all 0.3s ease;
@@ -119,22 +119,22 @@
 
 .featureCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  border-color: #16a34a;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: #064E3B;
 }
 
 .featureCardHighlight {
-  background: linear-gradient(135deg, #dcfce7 0%, #f0f9ff 100%);
-  border: 2px solid #16a34a;
+  background: linear-gradient(135deg, #E8F5E9 0%, #ffffff 100%);
+  border: 2px solid #064E3B;
 }
 
 .featureCardHighlight:hover {
-  box-shadow: 0 20px 40px rgba(22, 163, 74, 0.2);
+  box-shadow: 0 20px 40px rgba(6, 78, 59, 0.12);
 }
 
 /* Statistics Section */
 .statsSection {
-  background: linear-gradient(135deg, #1e3a5f 0%, #16a34a 100%);
+  background: linear-gradient(135deg, #064E3B 0%, #053230 100%);
   color: white;
   padding: 4rem 0;
 }
@@ -160,12 +160,12 @@
 
 /* Learning Approach Section */
 .approachSection {
-  background: linear-gradient(135deg, #f0f9f4 0%, #e0f2fe 100%);
+  background: linear-gradient(135deg, #F2F2F2 0%, #ffffff 100%);
   padding: 5rem 0;
 }
 
 .checkIcon {
-  color: #16a34a;
+  color: #064E3B;
   font-size: 1.2rem;
   margin-right: 1rem;
   font-weight: bold;
@@ -188,20 +188,20 @@
 }
 
 .videoCard {
-  background: white;
+  background: #ffffff;
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
 }
 
 .videoPlaceholder {
-  background: linear-gradient(135deg, #dcfce7 0%, #dbeafe 100%);
+  background: linear-gradient(135deg, #E8F5E9 0%, #F2F2F2 100%);
   border-radius: 12px;
   padding: 3rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #1e3a5f;
+  color: #064E3B;
   font-size: 4rem;
 }
 
@@ -219,21 +219,21 @@
 }
 
 .featureIconPrimary {
-  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  background: linear-gradient(135deg, #064E3B 0%, #095545 100%);
   color: white;
-  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 8px 20px rgba(6, 78, 59, 0.3);
 }
 
 .featureIconSecondary {
-  background: linear-gradient(135deg, #1e3a5f 0%, #334155 100%);
+  background: linear-gradient(135deg, #121212 0%, #333333 100%);
   color: white;
-  box-shadow: 0 8px 20px rgba(30, 58, 95, 0.3);
+  box-shadow: 0 8px 20px rgba(18, 18, 18, 0.3);
 }
 
 .featureIconTertiary {
-  background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
+  background: linear-gradient(135deg, #4D4D4D 0%, #6b7280 100%);
   color: white;
-  box-shadow: 0 8px 20px rgba(107, 114, 128, 0.3);
+  box-shadow: 0 8px 20px rgba(77, 77, 77, 0.3);
 }
 
 .featureIcon:hover {
@@ -242,10 +242,10 @@
 
 /* Testimonial Cards */
 .testimonialCard {
-  background: white;
+  background: #FFFFFF;
   border-radius: 16px;
   padding: 2rem;
-  border-left: 4px solid #16a34a;
+  border-left: 4px solid #064E3B;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   height: 100%;
@@ -272,18 +272,18 @@
 
 .testimonialName {
   font-weight: 600;
-  color: #1e3a5f;
+  color: #121212;
   margin-bottom: 0.25rem;
 }
 
 .testimonialRole {
-  color: #6b7280;
+  color: #4D4D4D;
   font-size: 0.9rem;
 }
 
 /* CTA Section */
 .ctaSection {
-  background: linear-gradient(135deg, #1e3a5f 0%, #16a34a 100%);
+  background: linear-gradient(135deg, #064E3B 0%, #053230 100%);
   color: white;
   padding: 5rem 0;
   position: relative;
@@ -320,7 +320,7 @@
 
 /* Section Titles */
 .sectionTitle {
-  color: #1e3a5f;
+  color: #121212;
   font-weight: 800;
   text-align: center;
   margin-bottom: 1rem;
@@ -331,14 +331,14 @@
   content: '';
   width: 60px;
   height: 4px;
-  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  background: linear-gradient(135deg, #064E3B 0%, #095545 100%);
   display: block;
   margin: 1rem auto;
   border-radius: 2px;
 }
 
 .sectionSubtitle {
-  color: #6b7280;
+  color: #4D4D4D;
   font-size: 1.2rem;
   text-align: center;
   max-width: 600px;

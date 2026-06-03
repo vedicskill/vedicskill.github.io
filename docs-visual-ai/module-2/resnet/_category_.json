@@ -1,0 +1,8 @@
+{
+  "label": "ResNet",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Residual Network (ResNet) is a revolutionary deep convolutional neural network architecture that enabled training of very deep networks through the introduction of skip connections"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Vision Transformer (ViT)",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Vision Transformer (ViT) is a revolutionary architecture that applies the Transformer model (originally designed for NLP) directly to image classification tasks by treating images as sequences of patches."
+  }
+}

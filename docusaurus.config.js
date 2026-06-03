@@ -5,25 +5,20 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 const { themes: prismThemes } = require("prism-react-renderer");
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
+const remarkMath = require("remark-math").default;
+const rehypeKatex = require("rehype-katex").default;
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Vedicskill Edutech",
-  tagline: "Vedicskill is practical way of learning skills",
+  title: "VedicSkill Academy",
+  tagline: "Your Learning Compasss",
   favicon: "img/favicon_io/favicon.ico",
   staticDirectories: ["static"],
 
-  //   Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
-
   // Set the production url of your site here
-  url: "https://vedicskill.com",
+  url: "https://courses.vedicskill.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
   trailingSlash: false, // Global trailingSlash config
@@ -34,7 +29,6 @@ const config = {
   projectName: "vedicskill.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -101,6 +95,23 @@ const config = {
 
   // Plugins: multiple docs plugins with IDs
   plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "visual-ai",
+        path: "docs-visual-ai",
+        routeBasePath: "course-visual-ai-with-transformers-llms",
+        sidebarPath: require.resolve("./sidebars.js"),
+        
+        customFields: {
+        title: "MongoDB",
+        description:
+          "Learn MongoDB from beginner to advanced with projects.",
+        icon: "🍃",
+        category: "Database"
+       }
+      },
+    ],
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -177,7 +188,7 @@ const config = {
         {
           name: "description",
           content:
-            "Learn Data Science, Statistics, AI, Web Apps with Vedicskill",
+            "Learn Data Science, Statistics, AI, Web Apps with VedicSkill Academy",
         },
         {
           name: "keywords",
@@ -204,16 +215,20 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Vedicskill",
-        logo: {
-          alt: "vedicskill logo",
-          src: "img/icon.png",
-        },
+        title: "VedicSkill Academy",
+        // logo: {
+        //   alt: "vedicskill logo",
+        //   src: "img/icon.png",
+        // },
         items: [
           {
             label: "Docs",
             position: "left",
             items: [
+              {
+                to: "/course-visual-ai-with-transformers-llms",
+                label: "Visual AI: Transformers & LLMs",
+              },
               { to: "/python-courses/intro", label: "Python" },
               {
                 to: "/facerec-django-courses/intro",
@@ -260,7 +275,7 @@ const config = {
             items: [
               {
                 label: "YouTube",
-                href: "https://www.youtube.com/@datascienceanywhere",
+                href: "https://www.youtube.com/@vedicskillacademy",
               },
               {
                 label: "Udemy",
@@ -286,7 +301,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Vedicskill | Datascience Anywhere.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VedicSkill Academy | Datascience Anywhere.`,
       },
       prism: {
         theme: prismThemes.github,
@@ -295,6 +310,9 @@ const config = {
     }),
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
   },
   themes: ["@docusaurus/theme-mermaid"],
 };
