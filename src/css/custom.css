@@ -6,5 +6,44 @@
 
 /* You can override the default Infima variables here. */
 
+/* Override Docusaurus / Infima primary blue with custom green */
+/* Light mode uses slightly darker greens for better contrast on light backgrounds. */
+:root {
+  --ifm-color-primary: #0f9b6f;
+  --ifm-color-primary-dark: #0e8a65;
+  --ifm-color-primary-darker: #0c7757;
+  --ifm-color-primary-light: #4fd4b0;
+  --ifm-color-primary-lighter: #8fe7ce;
+}
+
+/* Keep the current green palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #10b981;
+  --ifm-color-primary-dark: #0f9b6f;
+  --ifm-color-primary-darker: #0d855f;
+  --ifm-color-primary-light: #5eead4;
+  --ifm-color-primary-lighter: #a7f3d0;
+}
+
+::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+[data-theme='dark'] ::selection {
+  background: #10b981;
+  color: #000000;
+}
+
+[data-theme='dark'] ::-moz-selection {
+  background: #10b981;
+  color: #000000;
+}
+
 /* No custom theme variables are defined, so Docusaurus defaults apply. */
 
