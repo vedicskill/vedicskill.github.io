@@ -12,7 +12,7 @@ const rehypeKatex = require("rehype-katex").default;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "VedicSkill Academy | Tutorials",
+  title: "VedicSkill Academy",
   tagline: "Premium AI, Data Science & Software Development Training",
   favicon: "img/favicon.ico",
   staticDirectories: ["static"],
@@ -193,7 +193,7 @@ const config = {
         // Open Graph / Facebook
         { property: "og:type", content: "website" },
         { property: "og:locale", content: "en_US" },
-        { property: "og:site_name", content: "VedicSkill Academy | Tutorials" },
+        { property: "og:site_name", content: "VedicSkill Academy" },
 
         //        // Twitter Cards
         //        {name: 'twitter:card', content: 'summary_large_image'},
@@ -207,7 +207,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "VedicSkill Academy | Tutorials",
+        title: "VedicSkill Academy",
         // logo: {
         //   alt: "vedicskill logo",
         //   src: "img/icon.png",
