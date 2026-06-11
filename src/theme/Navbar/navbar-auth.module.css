@@ -1,0 +1,130 @@
+/**
+ * Navbar Authentication Menu Styles
+ */
+
+.authMenuContainer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginBtn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.loginBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.loginBtn:active {
+  transform: translateY(0);
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  border: 2px solid #667eea;
+}
+
+.userGreeting {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.roleBadge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.logoutBtn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #764ba2;
+  background: transparent;
+  border: 2px solid #764ba2;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background: #764ba2;
+  color: white;
+}
+
+.logoutBtn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .authMenuContainer {
+    top: 0.75rem;
+    right: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .loginBtn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .userMenu {
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .userGreeting {
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+  }
+
+  .logoutBtn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .userGreeting {
+    display: none;
+  }
+
+  .loginBtn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
