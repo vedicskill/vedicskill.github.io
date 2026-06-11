@@ -1,0 +1,45 @@
+/**
+ * TypeScript Configuration for Authentication
+ * 
+ * Add this to your tsconfig.json if using strict TypeScript mode
+ * to ensure proper type checking for the authentication system.
+ */
+
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    
+    // Path aliases for cleaner imports
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@context/*": ["src/context/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@theme/*": ["src/theme/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "docs/**/*",
+    "blog/**/*",
+    "docusaurus.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ]
+}
