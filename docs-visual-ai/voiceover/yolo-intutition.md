@@ -1397,3 +1397,7 @@ The intuition behind YOLO—predicting directly instead of searching—applies t
 | **Recall** | % of objects found | 0-1 |
 | **mAP** | Mean average precision | 0-1 |
 
+### 📑 Resources & PDF Notes
+<object data="/documents/assets/yolo.pdf" type="application/pdf" width="100%" height="600px">
+  <p>PDF not supported. <a href="/documents/assets/yolo.pdf">Download here</a>.</p>
+</object>
