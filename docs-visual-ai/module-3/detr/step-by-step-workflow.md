@@ -623,7 +623,7 @@ Total: Dominated by O(N²) from encoder self-attention
 
 ## Next: Training and Inference
 
-→ **[Training and Inference](./training-inference.md)**
+→ **[Training and Inference](./training-inference)
 
 ---
 

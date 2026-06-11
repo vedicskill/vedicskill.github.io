@@ -585,4 +585,4 @@ Step 7: Post-Processing
 
 No anchors. No NMS. No hand-crafted components.
 
-→ **[Next: Core Concepts](./core-concepts.md)**
+→ **[Next: Core Concepts](./core-concepts)**

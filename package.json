@@ -12,6 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
+    ,"start-auth-server": "node server/auth-server.js"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.1",
@@ -29,8 +30,8 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "rehype-katex": "7",
-    "remark-math": "6",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "yarn": "^1.22.22"
   },
   "devDependencies": {

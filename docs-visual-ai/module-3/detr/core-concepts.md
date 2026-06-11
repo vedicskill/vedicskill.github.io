@@ -598,7 +598,7 @@ Benefits:
 
 Ready to see how all these concepts come together?
 
-→ **[Step-by-Step Workflow](./step-by-step-workflow.md)**
+→ **[Step-by-Step Workflow](./step-by-step-workflow)**
 
 ---
 

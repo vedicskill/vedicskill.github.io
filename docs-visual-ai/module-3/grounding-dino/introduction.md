@@ -436,11 +436,11 @@ Large-scale training:
 
 Now that you understand the motivation and concept, let's dive deep:
 
-1. **[Open Vocabulary Detection](./open-vocabulary-detection.md)** - The core idea
-2. **[Architecture Overview](./architecture-overview.md)** - How it's built
-3. **[Vision-Language Fusion](./vision-language-fusion.md)** - Key innovation
-4. **[Practical Applications](./practical-applications.md)** - Real-world uses
-5. **[SAM Integration](./grounding-dino-sam-integration.md)** - Combining with segmentation
+1. **[Open Vocabulary Detection](./open-vocabulary-detection)** - The core idea
+2. **[Architecture Overview](./architecture-overview)** - How it's built
+3. **[Vision-Language Fusion](./vision-language-fusion)** - Key innovation
+4. **[Practical Applications](./practical-applications)** - Real-world uses
+5. **[SAM Integration](./grounding-dino-sam-integration)** - Combining with segmentation
 
 ## Key Insight
 
@@ -452,7 +452,7 @@ This is a fundamental change in how we approach object detection!
 
 ## Next Steps
 
-→ **[Open Vocabulary Detection](./open-vocabulary-detection.md)**
+→ **[Open Vocabulary Detection](./open-vocabulary-detection)**
 
 ---
 

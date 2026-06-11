@@ -656,7 +656,7 @@ Combine YOLO + DETR:
 
 ## Next: Evolution Timeline
 
-→ **[Evolution Timeline](../evolution-timeline.md)**
+→ **[Evolution Timeline](../evolution-timeline)**
 
 ---
 

@@ -141,9 +141,9 @@ Don't worry if some concepts are unfamiliar! We'll explain each concept step-by-
 
 ## Quick Navigation
 
-- **New to object detection?** Start with [Object Detection Basics](object-detection-basics.md)
-- **Interested in transformers?** Jump to [DETR Introduction](./DETR/introduction.md)
-- **Want open vocabulary detection?** Head to [Grounding DINO](./grounding-dino/introduction.md)
+- **New to object detection?** Start with [Object Detection Basics](./object-detection-basics)
+- **Interested in transformers?** Jump to [DETR Introduction](./detr/introduction)
+- **Want open vocabulary detection?** Head to [Grounding DINO](./grounding-dino/introduction)
 
 ## What Makes This Guide Special
 
@@ -155,7 +155,7 @@ Don't worry if some concepts are unfamiliar! We'll explain each concept step-by-
 
 ## Get Started
 
-Ready to dive in? Let's begin with the [Object Detection Basics](./object-detection-basics.md)!
+Ready to dive in? Let's begin with the [Object Detection Basics](./object-detection-basics)!
 
 ---
 

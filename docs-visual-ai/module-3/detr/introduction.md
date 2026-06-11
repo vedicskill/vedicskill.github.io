@@ -278,11 +278,11 @@ DETR was introduced by **Meta AI Research** in 2020:
 
 Now that you understand DETR's innovation, we'll dive deep into:
 
-1. **[Architecture Overview](./architecture-overview.md)** - Components and design
-2. **[Core Concepts](./core-concepts.md)** - Transformers, attention, queries
-3. **[Step-by-Step Workflow](./step-by-step-workflow.md)** - How DETR processes an image
-4. **[Training and Inference](./training-inference.md)** - Practical implementation
-5. **[Advantages and Disadvantages](./advantages-disadvantages.md)** - When to use DETR
+1. **[Architecture Overview](./architecture-overview)** - Components and design
+2. **[Core Concepts](./core-concepts)** - Transformers, attention, queries
+3. **[Step-by-Step Workflow](./step-by-step-workflow)** - How DETR processes an image
+4. **[Training and Inference](./training-inference)** - Practical implementation
+5. **[Advantages and Disadvantages](./advantages-disadvantages)** - When to use DETR
 
 ## Key Takeaways
 
@@ -302,7 +302,7 @@ DETR is the foundation for understanding modern detection. It shows how transfor
 
 Ready to understand how DETR works in detail?
 
-→ **[DETR Architecture Overview](./architecture-overview.md)**
+→ **[DETR Architecture Overview](./architecture-overview)**
 
 ---
 

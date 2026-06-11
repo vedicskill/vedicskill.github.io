@@ -218,7 +218,7 @@ This is what led researchers to explore **transformer-based approaches** like **
 
 Now that you understand YOLO's approach, let's see how **DETR** (Detection Transformer) addresses its limitations:
 
-→ **[DETR: Detection Transformer](./detr/introduction.md)**
+→ **[DETR: Detection Transformer](./detr/introduction)**
 
 ---
 

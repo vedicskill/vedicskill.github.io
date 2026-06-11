@@ -393,9 +393,9 @@ A typical object detection pipeline:
 
 Now that you understand the basics, let's explore:
 
-1. **[YOLO Overview](./yolo-overview.md)** - A brief introduction to real-time detection
-2. **[DETR: Detection Transformer](./detr/introduction.md)** - Transformer-based detection ⭐
-3. **[Grounding DINO](./grounding-dino/introduction.md)** - Open vocabulary detection ⭐
+1. **[YOLO Overview](./yolo-overview)** - A brief introduction to real-time detection
+2. **[DETR: Detection Transformer](./detr/introduction)** - Transformer-based detection ⭐
+3. **[Grounding DINO](./grounding-dino/introduction)** - Open vocabulary detection ⭐
 
 ---
 

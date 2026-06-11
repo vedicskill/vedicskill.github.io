@@ -653,7 +653,7 @@ Solution:
 
 ## Next: Advantages and Disadvantages
 
-→ **[Advantages and Disadvantages](./advantages-disadvantages.md)**
+→ **[Advantages and Disadvantages](./advantages-disadvantages)**
 
 ---
 
