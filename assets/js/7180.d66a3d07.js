@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkvedicskill=globalThis.webpackChunkvedicskill||[]).push([[7180],{2418(e,c,i){i.d(c,{createPacketServices:()=>l.$});var l=i(4824);i(9302)}}]);
