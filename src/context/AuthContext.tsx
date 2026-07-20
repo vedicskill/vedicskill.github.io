@@ -2,7 +2,15 @@ import React, { createContext, useContext, useEffect, useMemo, useState } from '
 
 // This AuthContext uses a simple local auth server instead of Supabase.
 // The server URL can be configured via `REACT_APP_AUTH_SERVER_URL`.
-const AUTH_SERVER = process.env.REACT_APP_AUTH_SERVER_URL || 'http://localhost:3001';
+const getAuthServerUrl = () => {
+  const envValue = (globalThis as typeof globalThis & {
+    process?: { env?: Record<string, string | undefined> };
+  }).process?.env?.REACT_APP_AUTH_SERVER_URL;
+
+  return envValue || 'http://localhost:3000';
+};
+
+const AUTH_SERVER = getAuthServerUrl();
 
 type User = {
   id?: string;
