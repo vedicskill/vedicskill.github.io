@@ -1,9 +1,0 @@
-{
-  "label": "Grounding DINO",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Grounding DINO is a state-of-the-art, zero-shot object detection model developed by IDEA-Research. It fuses a Transformer-based object detector (DINO) with a language model (like BERT), allowing it to identify and draw bounding boxes around arbitrary objects using natural language text prompts without needing retraining"
-  
-  }
-}

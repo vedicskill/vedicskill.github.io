@@ -1,9 +1,0 @@
-{
-  "label": "Detection Transformer (DETR)",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "DETR (DEtection TRansformer) is a pioneering deep learning framework introduced by Meta AI that approaches computer vision object detection as a direct set prediction problem"
-  
-  }
-}

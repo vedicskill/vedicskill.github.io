@@ -11,17 +11,18 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "start-auth-server": "node server/auth-server.js"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.10.1",
-    "@docusaurus/faster": "^3.10.1",
-    "@docusaurus/plugin-content-docs": "^3.10.1",
-    "@docusaurus/plugin-google-gtag": "^3.10.1",
-    "@docusaurus/plugin-ideal-image": "^3.10.1",
-    "@docusaurus/plugin-sitemap": "^3.10.1",
-    "@docusaurus/preset-classic": "^3.10.1",
-    "@docusaurus/theme-mermaid": "^3.10.1",
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/faster": "3.10.2",
+    "@docusaurus/plugin-content-docs": "3.10.2",
+    "@docusaurus/plugin-google-gtag": "3.10.2",
+    "@docusaurus/plugin-ideal-image": "3.10.2",
+    "@docusaurus/plugin-sitemap": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@docusaurus/theme-mermaid": "3.10.2",
     "@mdx-js/react": "^3.0.0",
     "add": "^2.0.6",
     "clsx": "^2.0.0",
@@ -29,13 +30,13 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "rehype-katex": "7",
-    "remark-math": "6",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.10.1",
-    "@docusaurus/types": "^3.10.1"
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/types": "3.10.2"
   },
   "browserslist": {
     "production": [
