@@ -1,164 +1,71 @@
 ---
-sidebar_position: 1
-title: Introduction to Object Detection
-description: Understanding Object Detection - From fundamentals to modern transformer-based approaches
+sidebar_position: 3
+title: Object Detection
+description: Concise course notes on object detection, YOLO, DETR, DINO, and Grounding DINO.
 ---
 
-# Introduction to Object Detection
+# Object Detection
 
-## Welcome to Object Detection
+This module introduces the core ideas behind object detection and the main model families used in modern computer vision.
 
-This comprehensive guide will take you on a journey through object detection, starting from the fundamentals and progressing to cutting-edge transformer-based architectures.
+## Core concept
 
-:::info
-**This guide focuses on:**
-- Fundamental concepts of object detection
-- DETR (Detection Transformer) - transformer-based detection
-- Grounding DINO - open vocabulary object detection
-- Practical applications and real-world use cases
-:::
+Object detection answers two questions:
+- What object is present?
+- Where is it located?
 
-## What You'll Learn
+The output is usually:
+- a class label
+- a bounding box
 
-### 📚 Learning Path
+Common evaluation terms:
+- IoU: overlap between predicted and ground-truth boxes
+- Precision/Recall
+- mAP: standard detection metric
 
-```
-Introduction to Object Detection
-        ↓
-Object Detection Basics
-        ↓
-Brief Overview of YOLO
-        ↓
-DETR: Detection Transformer ⭐
-        ↓
-Grounding DINO: Open Vocabulary Detection ⭐
-        ↓
-Comparison and Evolution
-        ↓
-Practical Implementation
-```
+## Key model notes
 
-## Why Object Detection?
+### YOLO
+- One-stage detector designed for speed
+- Predicts boxes and classes in a single pass
+- Common choice for real-time systems
+- Paper: https://arxiv.org/pdf/1506.02640
+- Hugging Face: placeholder
+- PPT: placeholder
+- Notebook: placeholder
 
-### From Image Classification to Object Detection
+### DETR
+- Transformer-based detector
+- Uses object queries instead of hand-crafted anchors
+- Removes the need for NMS in the standard formulation
+- Paper: https://arxiv.org/pdf/2005.12872
+- Hugging Face: placeholder
+- PPT: placeholder
+- Notebook: placeholder
 
-**Image Classification** answers:
-> "What is in the image?"
+### DINO
+- Improves DETR with denoising and better training behavior
+- Stronger convergence and more stable optimization
+- Paper: https://arxiv.org/pdf/2203.03605
+- Hugging Face: placeholder
+- PPT: placeholder
+- Notebook: placeholder
 
-**Object Detection** answers:
-> "What is in the image, and WHERE is it?"
+### Grounding DINO
+- Open-vocabulary detector
+- Connects text prompts with visual regions
+- Useful for language-guided detection and zero-shot settings
+- Paper: https://arxiv.org/pdf/2303.05499
+- Hugging Face: placeholder
+- PPT: placeholder
+- Notebook: placeholder
 
-### Real-World Applications
+## Shared resources
+- Data (zip file): placeholder
 
-Object detection powers many modern applications:
-
-- 🚗 **Autonomous Vehicles** - Detecting cars, pedestrians, traffic signs
-- 🏥 **Medical Imaging** - Detecting tumors, abnormalities, fractures
-- 🛒 **Retail Analytics** - Tracking customers, analyzing shopping behavior
-- 🔒 **Security Systems** - Detecting intruders, suspicious objects
-- 📦 **Industrial Inspection** - Detecting defects, damaged components
-- 📱 **Mobile Apps** - Real-time object detection on edge devices
-
-## The Evolution of Object Detection
-
-The field of object detection has evolved significantly:
-
-### Traditional Approaches (R-CNN Family)
-- Multiple stages (propose regions → extract features → classify)
-- Computationally expensive
-- Slow inference time
-
-### Real-Time Detectors (YOLO, SSD)
-- Single-stage detection
-- Real-time inference
-- Industry standard for edge deployment
-
-### Transformer-Based Methods (DETR)
-- End-to-end learning
-- No hand-crafted components (no NMS)
-- Superior contextual understanding
-- **Main focus of this guide** ⭐
-
-### Open Vocabulary Detection (Grounding DINO)
-- Combine vision + language
-- Detect unseen objects without retraining
-- Highly flexible and generalizable
-- **Advanced focus of this guide** ⭐
-
-## Course Structure
-
-This documentation is organized into the following sections:
-
-### 1. **Fundamentals**
-- What is object detection?
-- Bounding boxes and coordinates
-- Basic concepts
-
-### 2. **DETR: Detection Transformer** 🌟
-- Why transformers for detection?
-- Architecture and components
-- Step-by-step workflow
-- Training and inference
-- Advantages and limitations
-
-### 3. **Grounding DINO** 🌟
-- Open vocabulary detection
-- Vision-language fusion
-- How it detects unseen objects
-- Integration with SAM (Segment Anything Model)
-- Real-world applications
-
-### 4. **Comparison & Evolution**
-- YOLO vs DETR comparison
-- Evolution timeline
-- Choosing the right approach
-
-## Key Concepts You'll Master
-
-By the end of this guide, you'll understand:
-
-✅ How object detection differs from image classification  
-✅ What bounding boxes are and how they're represented  
-✅ The fundamental limitations that led to transformer-based detection  
-✅ How DETR works and why it's revolutionary  
-✅ How Grounding DINO enables open vocabulary detection  
-✅ When to use which approach for different applications  
-✅ How to integrate these models into practical applications  
-
-## Prerequisites
-
-To get the most out of this guide, you should have:
-
-- Basic understanding of **deep learning** concepts
-- Familiarity with **convolutional neural networks (CNNs)**
-- Understanding of **image classification**
-- Basic knowledge of **attention mechanisms**
-- Python programming experience
-
-:::note
-Don't worry if some concepts are unfamiliar! We'll explain each concept step-by-step as we progress through the guide.
-:::
-
-## Quick Navigation
-
-- **New to object detection?** Start with [Object Detection Basics](./object-detection-basics)
-- **Interested in transformers?** Jump to [DETR Introduction](./detr/introduction)
-- **Want open vocabulary detection?** Head to [Grounding DINO](./grounding-dino/introduction)
-
-## What Makes This Guide Special
-
-🎯 **Practical Focus** - Concepts explained with real-world examples  
-📊 **Visual Explanations** - ASCII diagrams and illustrations  
-🔄 **Progressive Complexity** - From simple to advanced  
-💡 **Interactive Learning** - Clear step-by-step breakdowns  
-⚡ **Modern Approaches** - Focus on state-of-the-art transformer methods  
-
-## Get Started
-
-Ready to dive in? Let's begin with the [Object Detection Basics](./object-detection-basics)!
-
----
-
-**Happy Learning! 🚀**
-
-*This documentation is designed for students and practitioners who want to master modern object detection techniques with transformers.*
+## Suggested study flow
+1. Review object detection basics
+2. Study YOLO
+3. Study DETR
+4. Compare DINO and Grounding DINO
+5. Practice with notebooks and small examples
